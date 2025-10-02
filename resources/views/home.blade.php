@@ -266,38 +266,70 @@
     <!-- About Section -->
     <section id="about" class="py-20 bg-[#F5F3F0]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-[#1b1b18] mb-6">À Propos de Dwesta</h2>
-                    <p class="text-lg text-[#706f6c] mb-6 leading-relaxed">
-                        Nous sommes une équipe passionnée de développeurs, designers et consultants qui créent des solutions digitales innovantes pour transformer votre entreprise et accélérer votre croissance.
+                    <h2 class="text-4xl md:text-5xl font-bold text-[#2c2c2c] mb-8 leading-tight">Une vision audacieuse,<br><span class="ml-16 text-[#FF6B35]">une expertise internationale</span></h2>
+                    <p class="text-xl text-[#666666] mb-8 leading-relaxed">
+                    Née de la vision de trois entrepreneurs africains, Dwesta capitalise sur une décennie d’expertise acquise auprès de leaders tels que Cisco, Palo Alto Networks et Orange.
+                    </p>
+                    <p class="text-xl text-[#666666] mb-8 leading-relaxed">
+                    Basés à Bangui et présents en France, nous accompagnons nos clients sur deux continents. Notre approche repose sur l'innovation, la performance et la collaboration pour fournir des solutions technologiques pointues, adaptées aux enjeux de chaque entreprise.
                     </p>
                   
-                 
-
-                    <div class="space-y-4">
-                      
-                       
-                      
-                       
+                    <div class="space-y-6">
+                        <!-- Innovation et Performance -->
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-[#FF6B35] rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <p class="text-lg text-[#666666] leading-relaxed">
+                                <strong class="text-[#2c2c2c]">Innovation et performance au cœur de notre ADN.</strong>
+                            </p>
+                        </div>
+                        
+                        <!-- Équipe passionnée -->
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-[#FF6B35] rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-lg text-[#666666] leading-relaxed">
+                                <strong class="text-[#2c2c2c]">Une équipe passionnée pour des solutions adaptées.</strong>
+                            </p>
+                        </div>
+                        
+                        <!-- Présence internationale -->
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-[#FF6B35] rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-lg text-[#666666] leading-relaxed">
+                                <strong class="text-[#2c2c2c]">Présence en Afrique et en Europe pour un accompagnement de proximité.</strong>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 
-                <div>
+                <div class="ml-16">
                     <h3 class="text-2xl font-bold text-[#1b1b18] mb-8 text-center">Vos Interlocuteurs</h3>
                     
-                    <div class="space-y-6">
+                    <div class="space-y-6 max-w-sm">
                         <!-- CEO -->
                         <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
                             <div class="flex items-center">
-                                <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                                    <img src="https://via.placeholder.com/64x64/cccccc/666666?text=CEO" 
-                                         alt="CEO" 
-                                         class="w-14 h-14 rounded-full object-cover">
+                                <div class="w-24 h-24 rounded-full overflow-hidden mr-6">
+                                    <img src="{{ asset('images/equipes/IMG_CEO.JPG') }}" 
+                                         alt="Davesne Yaya" 
+                                         class="w-full h-full object-cover">
                                 </div>
                                 <div>
-                                    <h4 class="text-lg font-semibold text-[#1b1b18]">CEO</h4>
-                                    <p class="text-[#706f6c] text-sm">Directeur Général</p>
+                                    <h4 class="text-xl font-semibold text-[#1b1b18]">Davesne Yaya</h4>
+                                    <p class="text-[#FF6B35] text-base font-semibold">CEO</p>
                                 </div>
                             </div>
                         </div>
@@ -305,29 +337,29 @@
                         <!-- COO -->
                         <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
                             <div class="flex items-center">
-                                <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                                    <img src="https://via.placeholder.com/64x64/cccccc/666666?text=COO" 
-                                         alt="COO" 
-                                         class="w-14 h-14 rounded-full object-cover">
+                                <div class="w-24 h-24 rounded-full overflow-hidden mr-6">
+                                    <img src="{{ asset('images/equipes/IMG_COO.JPG') }}" 
+                                         alt="Abdoulaye Nayelwa" 
+                                         class="w-full h-full object-cover">
                                 </div>
                                 <div>
-                                    <h4 class="text-lg font-semibold text-[#1b1b18]">COO</h4>
-                                    <p class="text-[#706f6c] text-sm">Directeur des Opérations</p>
+                                    <h4 class="text-xl font-semibold text-[#1b1b18]">Abdoulaye Nayelwa</h4>
+                                    <p class="text-[#FF6B35] text-base font-semibold">COO</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Responsable Pôle Sécurité -->
+                        <!-- CSO -->
                         <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
                             <div class="flex items-center">
-                                <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                                    <img src="https://via.placeholder.com/64x64/cccccc/666666?text=SEC" 
-                                         alt="Responsable Sécurité" 
-                                         class="w-14 h-14 rounded-full object-cover">
+                                <div class="w-24 h-24 rounded-full overflow-hidden mr-6">
+                                    <img src="{{ asset('images/equipes/IMG_CSO.JPG') }}" 
+                                         alt="Pamela Denis" 
+                                         class="w-full h-full object-cover">
                                 </div>
                                 <div>
-                                    <h4 class="text-lg font-semibold text-[#1b1b18]">Responsable Pôle Sécurité</h4>
-                                    <p class="text-[#706f6c] text-sm">Expert en Cybersécurité</p>
+                                    <h4 class="text-xl font-semibold text-[#1b1b18]">Pamela Denis</h4>
+                                    <p class="text-[#FF6B35] text-base font-semibold">CSO</p>
                                 </div>
                             </div>
                         </div>

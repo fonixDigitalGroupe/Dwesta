@@ -24,15 +24,16 @@
                 </div>
                 
                 <div class="hidden md:flex items-center space-x-6">
-                    <a href="{{ route('home') }}" class="text-[#1b1b18] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Accueil</a>
-                    <a href="{{ route('about') }}" class="text-[#1b1b18] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">À propos</a>
-                    <a href="{{ route('services') }}" class="text-[#1b1b18] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Services</a>
+                    <a href="{{ route('home') }}" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Accueil</a>
+                    <a href="{{ route('about') }}" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">À propos</a>
+                    <a href="{{ route('services') }}" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Services</a>
+                    <a href="{{ route('partenariats') }}" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Partenariats</a>
                     <a href="{{ route('contact') }}" class="bg-[#F53003] text-white px-4 py-2 rounded-lg text-base font-medium hover:bg-[#e02d03] transition-colors">Contact</a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-[#1b1b18] hover:text-[#F53003] focus:outline-none focus:text-[#F53003]">
+                    <button id="mobile-menu-button" class="text-[#2c2c2c] hover:text-[#F53003] focus:outline-none focus:text-[#F53003]">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -44,10 +45,11 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="{{ route('home') }}" class="block px-3 py-2 text-[#1b1b18] hover:text-[#F53003]">Accueil</a>
-                <a href="{{ route('about') }}" class="block px-3 py-2 text-[#1b1b18] hover:text-[#F53003]">À propos</a>
-                <a href="{{ route('services') }}" class="block px-3 py-2 text-[#1b1b18] hover:text-[#F53003]">Services</a>
-                <a href="{{ route('contact') }}" class="block px-3 py-2 text-[#1b1b18] hover:text-[#F53003]">Contact</a>
+                <a href="{{ route('home') }}" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Accueil</a>
+                <a href="{{ route('about') }}" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">À propos</a>
+                <a href="{{ route('services') }}" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Services</a>
+                <a href="{{ route('partenariats') }}" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Partenariats</a>
+                <a href="{{ route('contact') }}" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Contact</a>
             </div>
         </div>
     </nav>
