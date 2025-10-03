@@ -35,17 +35,11 @@
                 <!-- Right Side - Image -->
                 <div class="relative flex justify-center lg:justify-end items-end mt-8 lg:mt-8">
                     <!-- Main Image Container -->
-                    <div class="relative bg-white rounded-2xl shadow-2xl hero-rectangle w-[550px] h-[350px] border border-gray-200 cursor-pointer" 
+                    <div class="relative bg-white rounded-2xl shadow-2xl hero-rectangle w-[550px] h-[350px] border border-gray-200 cursor-pointer overflow-hidden" 
                          onclick="this.classList.add('click-animation'); setTimeout(() => { this.classList.remove('click-animation'); }, 200);">
-                        <!-- Empty Frame -->
-                        <div class="w-full h-full flex items-center justify-center">
-                            <div class="text-center text-gray-400">
-                                <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                </svg>
-                                <p class="text-sm">Image placeholder</p>
-                            </div>
-                        </div>
+                        <img src="{{ asset('images/cap.png') }}" 
+                             alt="Dwesta Solutions" 
+                             class="w-full h-full object-cover rounded-2xl">
                     </div>
                 </div>
             </div>
@@ -54,35 +48,52 @@
     </section>
 
     <!-- Experience Section -->
-    <section class="py-12 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section class="py-20 bg-gradient-to-br from-[#F8F9FA] to-[#E9ECEF]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <!-- Contenu à gauche -->
                 <div>
-                    <div class="inline-block bg-[#FF6B35] text-white px-6 py-2 rounded-full text-sm font-medium mb-4">
+                    <div class="inline-block bg-[#FF6B35] text-white px-6 py-3 rounded-full text-sm font-semibold mb-6">
                         Depuis 2014
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-[#2c2c2c] mb-4">
+                    <h3 class="text-4xl md:text-5xl font-bold text-[#1b1b18] mb-6 leading-tight">
                         +10 ans d'existence
-                    </h2>
-                    <p class="text-lg text-[#666666] leading-relaxed">
-                        Fruit d'une expertise de <strong>+10ans</strong>, DWESTA est aujourd'hui une société de conseil en transformation numérique, un partenaire de confiance
+                    </h3>
+                    <p class="text-xl text-[#666666] leading-relaxed">
+                        Fruit d'une expertise de <strong class="text-[#FF6B35]">+10 ans</strong>, DWESTA est aujourd'hui une société de conseil en transformation numérique, un partenaire de confiance résolument différent par sa culture d'entreprise et son agilité.
                     </p>
                 </div>
                 
                 <!-- Stats à droite -->
-                <div class="grid grid-cols-3 gap-6">
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-[#FF6B35] mb-2">2</div>
-                        <div class="text-lg font-semibold text-[#2c2c2c]">Continents</div>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-white w-24 h-24 rounded-full shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center py-2">
+                        <div class="text-lg font-bold text-[#FF6B35] mb-2 mt-3">2</div>
+                        <div class="text-xs font-semibold text-[#1b1b18] text-center">Continents</div>
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#FF6B35] to-[#e55a2b] rounded-full flex items-center justify-center mt-2">
+                            <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-[#FF6B35] mb-2">100</div>
-                        <div class="text-lg font-semibold text-[#2c2c2c]">Pays</div>
+                    
+                    <div class="bg-white w-24 h-24 rounded-full shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center py-2">
+                        <div class="text-lg font-bold text-[#FF6B35] mb-2 mt-3">100+</div>
+                        <div class="text-xs font-semibold text-[#1b1b18] text-center">Pays</div>
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#FF6B35] to-[#e55a2b] rounded-full flex items-center justify-center mt-2">
+                            <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-[#FF6B35] mb-2">6</div>
-                        <div class="text-lg font-semibold text-[#2c2c2c]">Offres Majeures</div>
+                    
+                    <div class="bg-white w-24 h-24 rounded-full shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center py-2">
+                        <div class="text-lg font-bold text-[#FF6B35] mb-2 mt-3">6+</div>
+                        <div class="text-xs font-semibold text-[#1b1b18] text-center">Offres</div>
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#FF6B35] to-[#e55a2b] rounded-full flex items-center justify-center mt-2">
+                            <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -202,59 +213,64 @@
     </section>
 
     <!-- Fournisseur Officiel Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-[#2c2c2c] mb-4">Fournisseur Officiel</h2>
-               
+    <section class="py-20 bg-gradient-to-br from-[#F8F9FA] to-[#E9ECEF]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1b1b18] mb-4">Fournisseur officiel<br><span class="text-[#FF6B35]">de technologies de pointe</span></h2>
+                <p class="text-xl text-[#666666] max-w-2xl mx-auto">
+                    Dwesta est partenaire certifié des leaders mondiaux de la cybersécurité, vous garantissant un accès privilégié aux meilleures solutions du marché.
+                </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-                <!-- Carte 1: Laravel -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mr-4">
-                            <img src="https://via.placeholder.com/64x64/cccccc/666666?text=Logo" 
-                                 alt="Logo Partenaire" 
-                                 class="w-12 h-12 rounded-lg object-cover">
+                <!-- Carte 1: Fortinet -->
+                <div class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 text-center transform hover:-translate-y-2">
+                    <div class="mb-6">
+                        <div class="relative flex items-center justify-center mx-auto mb-4">
+                            <div class="absolute inset-0 bg-gradient-to-r from-[#FF6B35] to-[#e55a2b] rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                            <img src="{{ asset('images/IMG-Fortinet.jpg') }}" 
+                                 alt="Logo Fortinet" 
+                                 class="relative w-20 h-20 object-cover rounded-2xl shadow-lg">
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-[#2c2c2c]">Partenaire test 2 </h3>
-                            <p class="text-sm text-[#FF6B35] font-medium"></p>
+                        <h3 class="text-xl font-bold text-[#1b1b18] mb-2">Fortinet</h3>
+                        <div class="inline-flex items-center px-3 py-1 bg-[#FF6B35]/10 text-[#FF6B35] text-sm font-semibold rounded-full">
+                            Partenaire Exclusif
                         </div>
                     </div>
-                    <p class="text-[#666666] mb-6 leading-relaxed">
-                      description test 2.
+                    <p class="text-[#666666] mb-6 leading-relaxed text-sm">
+                      Partenaire officiel exclusif en République Centrafricaine pour les solutions de cybersécurité Fortinet : pare-feux, sécurité réseau et protection avancée.
                     </p>
-                    <a href="" target="_blank" 
-                        class="inline-flex items-center text-[#FF6B35] font-medium hover:text-[#e55a2b] transition-colors">
-                        Visiter le site officiel
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <a href="https://www.fortinet.com/corporate/about-us/request-a-quote" target="_blank" 
+                        class="inline-flex items-center justify-center w-full bg-white border-2 border-[#FF6B35] text-[#FF6B35] px-6 py-3 rounded-xl font-semibold hover:bg-[#FF6B35] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Découvrir Fortinet
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                         </svg>
                     </a>
                 </div>
 
-                <!-- Carte 2: AWS -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mr-4">
-                            <img src="https://via.placeholder.com/64x64/cccccc/666666?text=Logo" 
-                                 alt="Logo Partenaire" 
-                                 class="w-12 h-12 rounded-lg object-cover">
+                <!-- Carte 2: ESET -->
+                <div class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 text-center transform hover:-translate-y-2">
+                    <div class="mb-6">
+                        <div class="relative flex items-center justify-center mx-auto mb-4">
+                            <div class="absolute inset-0 bg-gradient-to-r from-[#FF6B35] to-[#e55a2b] rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                            <img src="{{ asset('images/equipes/IMG-EST.jpg') }}" 
+                                 alt="Logo ESET" 
+                                 class="relative w-20 h-20 object-cover rounded-2xl shadow-lg">
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-[#2c2c2c]">Partenaire test1</h3>
-                            <p class="text-sm text-[#FF6B35] font-medium"></p>
+                        <h3 class="text-xl font-bold text-[#1b1b18] mb-2">ESET</h3>
+                        <div class="inline-flex items-center px-3 py-1 bg-[#FF6B35]/10 text-[#FF6B35] text-sm font-semibold rounded-full">
+                            Distributeur Officiel
                         </div>
                     </div>
-                    <p class="text-[#666666] mb-6 leading-relaxed">
-                        Description test.
+                    <p class="text-[#666666] mb-6 leading-relaxed text-sm">
+                        Distributeur officiel des solutions antivirus et de sécurité endpoints ESET, reconnues mondialement pour leur efficacité et leur légèreté.       <span class="text-white">VVVVVVVVVVVVVVV</span>
                     </p>
-                    <a href="" target="_blank" 
-                        class="inline-flex items-center text-[#FF6B35] font-medium hover:text-[#e55a2b] transition-colors">
-                        Visiter le site officiel
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="mb-6"></div>
+                    <a href="https://www.eset.com/fr/" target="_blank" 
+                        class="inline-flex items-center justify-center w-full bg-white border-2 border-[#FF6B35] text-[#FF6B35] px-6 py-3 rounded-xl font-semibold hover:bg-[#FF6B35] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Découvrir ESET
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                         </svg>
                     </a>
@@ -282,73 +298,51 @@
                         Basés à Bangui et présents en France, nous accompagnons nos clients sur deux continents. Notre approche repose sur l'innovation, la performance et la collaboration pour fournir des solutions technologiques pointues, adaptées aux enjeux de chaque entreprise.
                         </p>
                     </div>
-                  
-                    <div class="space-y-6">
-                        <!-- Innovation et Performance -->
-                        <div class="flex items-start group">
-                            <div class="w-12 h-12 bg-gradient-to-br from-[#FF6B35] to-[#e55a2b] rounded-xl flex items-center justify-center mr-6 mt-1 group-hover:scale-110 transition-transform duration-300">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    
+                    <!-- Trois éléments clés -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-white border-2 border-[#FF6B35] rounded-full flex items-center justify-center mr-4 shadow-lg">
+                                <svg class="w-6 h-6 text-[#FF6B35]" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
                                 </svg>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-[#2c2c2c] mb-2">Innovation et Performance</h3>
-                                <p class="text-lg text-[#666666] leading-relaxed">
-                                    Au cœur de notre ADN, nous repoussons les limites technologiques pour offrir des solutions d'avant-garde.
-                                </p>
-                            </div>
+                            <p class="text-lg text-[#666666] font-medium">Innovation et performance au cœur de notre ADN.</p>
                         </div>
                         
-                        <!-- Équipe passionnée -->
-                        <div class="flex items-start group">
-                            <div class="w-12 h-12 bg-gradient-to-br from-[#FF6B35] to-[#e55a2b] rounded-xl flex items-center justify-center mr-6 mt-1 group-hover:scale-110 transition-transform duration-300">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-white border-2 border-[#FF6B35] rounded-full flex items-center justify-center mr-4 shadow-lg">
+                                <svg class="w-6 h-6 text-[#FF6B35]" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.54 8H17c-.8 0-1.54.37-2.01.99L14 10.5 12.01 8.99A2.5 2.5 0 0 0 10 8H8.46c-.8 0-1.54.37-2.01.99L4 10.5V22h2v-6h2.5l2.5-6h2l2.5 6H14v6h2z"/>
                                 </svg>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-[#2c2c2c] mb-2">Équipe Passionnée</h3>
-                                <p class="text-lg text-[#666666] leading-relaxed">
-                                    Des experts dédiés qui créent des solutions sur mesure pour répondre à vos défis uniques.
-                                </p>
-                            </div>
+                            <p class="text-lg text-[#666666] font-medium">Une équipe passionnée pour des solutions adaptées.</p>
                         </div>
                         
-                        <!-- Présence internationale -->
-                        <div class="flex items-start group">
-                            <div class="w-12 h-12 bg-gradient-to-br from-[#FF6B35] to-[#e55a2b] rounded-xl flex items-center justify-center mr-6 mt-1 group-hover:scale-110 transition-transform duration-300">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-white border-2 border-[#FF6B35] rounded-full flex items-center justify-center mr-4 shadow-lg">
+                                <svg class="w-6 h-6 text-[#FF6B35]" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                                 </svg>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-[#2c2c2c] mb-2">Présence Internationale</h3>
-                                <p class="text-lg text-[#666666] leading-relaxed">
-                                    En Afrique et en Europe, nous offrons un accompagnement de proximité pour vos projets.
-                                </p>
-                            </div>
+                            <p class="text-lg text-[#666666] font-medium">Présence en Afrique et en Europe pour un accompagnement de proximité.</p>
                         </div>
                     </div>
+                    
 
-                    <!-- CTA Button -->
-                    <div class="mt-10">
-                        <a href="#contact" class="inline-flex items-center bg-[#FF6B35] text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#e55a2b] transition-all duration-300 transform hover:scale-105 shadow-lg">
-                            Découvrir notre expertise
-                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                    </div>
                 </div>
                 
-                <div class="ml-16">
+                <div class="ml-24 pt-16">
+                    <div class="text-center mb-4">
+                        <span class="text-[#FF6B35] text-lg font-semibold">✦ Notre équipe</span>
+                    </div>
                     <h3 class="text-2xl font-bold text-[#1b1b18] mb-8 text-center">Vos Interlocuteurs</h3>
                     
-                    <div class="space-y-6 max-w-sm">
+                    <div class="space-y-6 max-w-64 mt-20">
                         <!-- CEO -->
                         <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
                             <div class="flex items-center">
-                                <div class="w-24 h-24 rounded-full overflow-hidden mr-6">
+                                <div class="w-16 h-16 rounded-full overflow-hidden mr-6">
                                     <img src="{{ asset('images/equipes/IMG_CEO.JPG') }}" 
                                          alt="Davesne Yaya" 
                                          class="w-full h-full object-cover">
@@ -363,7 +357,7 @@
                         <!-- COO -->
                         <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
                             <div class="flex items-center">
-                                <div class="w-24 h-24 rounded-full overflow-hidden mr-6">
+                                <div class="w-16 h-16 rounded-full overflow-hidden mr-6">
                                     <img src="{{ asset('images/equipes/IMG_COO.JPG') }}" 
                                          alt="Abdoulaye Nayelwa" 
                                          class="w-full h-full object-cover">
@@ -378,7 +372,7 @@
                         <!-- CSO -->
                         <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
                             <div class="flex items-center">
-                                <div class="w-24 h-24 rounded-full overflow-hidden mr-6">
+                                <div class="w-16 h-16 rounded-full overflow-hidden mr-6">
                                     <img src="{{ asset('images/equipes/IMG_CSO.JPG') }}" 
                                          alt="Pamela Denis" 
                                          class="w-full h-full object-cover">
@@ -396,39 +390,42 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-[#E5E5E5]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-[#1b1b18] mb-4">Contactez-nous</h2>
-             
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1b1b18] mb-4">Prêt à démarrer votre<br><span class="text-[#FF6B35]">prochain projet ?</span></h2>
+                <p class="text-xl text-[#666666] max-w-3xl mx-auto">
+                    Discussions de la manière dont nous pouvons vous aider à transformer votre entreprise. Contactez-nous dès aujourd'hui.
+                </p>
             </div>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <!-- Carte/Image -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                <!-- Image -->
                 <div class="relative">
-                    <div class="w-full h-full min-h-[500px] bg-gray-50 rounded-lg flex items-center justify-center border border-gray-200">
-                        <img src="https://via.placeholder.com/400x400/cccccc/666666?text=Image" 
-                             alt="Image placeholder" 
-                             class="w-80 h-80 rounded-lg object-cover">
+                    <div class="w-full h-full max-h-[300px] flex items-center justify-center">
+                        <img src="{{ asset('images/IMG-contact.jpg') }}" 
+                             alt="Contact Dwesta Solutions" 
+                             class="w-full h-full rounded-l-xl object-cover">
                     </div>
                 </div>
                 
-                <div class="bg-[#FDFDFC] p-8 rounded-2xl border border-gray-200">
-                    <h3 class="text-2xl font-semibold mb-6 text-[#1b1b18]">Envoyez-nous un message</h3>
-                    <form class="space-y-6">
+                <!-- Formulaire -->
+                <div class="bg-white p-6 rounded-r-2xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold text-[#1b1b18] mb-6">Envoyez-nous un message</h3>
+                    <form class="space-y-4">
                         <div>
                             <label class="block text-sm font-medium mb-2 text-[#1b1b18]">Nom complet</label>
-                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F53003] focus:border-transparent transition-colors">
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent transition-colors">
                         </div>
                         <div>
                             <label class="block text-sm font-medium mb-2 text-[#1b1b18]">Email</label>
-                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F53003] focus:border-transparent transition-colors">
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent transition-colors">
                         </div>
                         <div>
                             <label class="block text-sm font-medium mb-2 text-[#1b1b18]">Message</label>
-                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F53003] focus:border-transparent transition-colors" placeholder="Décrivez votre projet..."></textarea>
+                            <textarea rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent transition-colors" placeholder="Décrivez votre projet..."></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-[#F53003] text-white py-4 rounded-lg font-semibold text-lg hover:bg-[#e02d03] transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        <button type="submit" class="w-full bg-[#FF6B35] text-white py-3 rounded-lg font-semibold text-base hover:bg-[#e55a2b] transition-all duration-300 transform hover:scale-105 shadow-lg">
                             Envoyer le message
                         </button>
                     </form>
