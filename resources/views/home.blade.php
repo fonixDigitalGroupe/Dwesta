@@ -290,42 +290,42 @@
                     </div>
                     <h2 class="text-4xl md:text-5xl font-bold text-[#2c2c2c] mb-8 leading-tight">Une vision audacieuse,<br><span class="ml-16 text-[#FF6B35]">une expertise internationale</span></h2>
                     
-                    <div class="space-y-6 mb-8">
-                        <p class="text-xl text-[#666666] leading-relaxed">
+                    <div class="space-y-3 mb-8">
+                        <p class="text-lg text-[#666666] leading-relaxed">
                         Née de la vision de trois entrepreneurs africains, Dwesta capitalise sur une décennie d'expertise acquise auprès de leaders tels que Cisco, Palo Alto Networks et Orange.
                         </p>
-                        <p class="text-xl text-[#666666] leading-relaxed">
+                        <p class="text-lg text-[#666666] leading-relaxed">
                         Basés à Bangui et présents en France, nous accompagnons nos clients sur deux continents. Notre approche repose sur l'innovation, la performance et la collaboration pour fournir des solutions technologiques pointues, adaptées aux enjeux de chaque entreprise.
                         </p>
                     </div>
                     
                     <!-- Trois éléments clés -->
-                    <div class="space-y-4 mb-8">
+                    <div class="space-y-1 mb-6 -mt-8">
                         <div class="flex items-center">
-                            <div class="w-12 h-12 bg-white border-2 border-[#FF6B35] rounded-full flex items-center justify-center mr-4 shadow-lg">
-                                <svg class="w-6 h-6 text-[#FF6B35]" fill="currentColor" viewBox="0 0 24 24">
+                            <div class="w-8 h-8 bg-white border-2 border-[#FF6B35] rounded-full flex items-center justify-center mr-3 shadow-md">
+                                <svg class="w-4 h-4 text-[#FF6B35]" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
                                 </svg>
                             </div>
-                            <p class="text-lg text-[#666666] font-medium">Innovation et performance au cœur de notre ADN.</p>
+                            <p class="text-base text-[#666666] font-medium">Innovation et performance au cœur de notre ADN.</p>
                         </div>
                         
                         <div class="flex items-center">
-                            <div class="w-12 h-12 bg-white border-2 border-[#FF6B35] rounded-full flex items-center justify-center mr-4 shadow-lg">
-                                <svg class="w-6 h-6 text-[#FF6B35]" fill="currentColor" viewBox="0 0 24 24">
+                            <div class="w-8 h-8 bg-white border-2 border-[#FF6B35] rounded-full flex items-center justify-center mr-3 shadow-md">
+                                <svg class="w-4 h-4 text-[#FF6B35]" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.54 8H17c-.8 0-1.54.37-2.01.99L14 10.5 12.01 8.99A2.5 2.5 0 0 0 10 8H8.46c-.8 0-1.54.37-2.01.99L4 10.5V22h2v-6h2.5l2.5-6h2l2.5 6H14v6h2z"/>
                                 </svg>
                             </div>
-                            <p class="text-lg text-[#666666] font-medium">Une équipe passionnée pour des solutions adaptées.</p>
+                            <p class="text-base text-[#666666] font-medium">Une équipe passionnée pour des solutions adaptées.</p>
                         </div>
                         
                         <div class="flex items-center">
-                            <div class="w-12 h-12 bg-white border-2 border-[#FF6B35] rounded-full flex items-center justify-center mr-4 shadow-lg">
-                                <svg class="w-6 h-6 text-[#FF6B35]" fill="currentColor" viewBox="0 0 24 24">
+                            <div class="w-8 h-8 bg-white border-2 border-[#FF6B35] rounded-full flex items-center justify-center mr-3 shadow-md">
+                                <svg class="w-4 h-4 text-[#FF6B35]" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                                 </svg>
                             </div>
-                            <p class="text-lg text-[#666666] font-medium">Présence en Afrique et en Europe pour un accompagnement de proximité.</p>
+                            <p class="text-base text-[#666666] font-medium">Présence en Afrique et en Europe pour un accompagnement de proximité.</p>
                         </div>
                     </div>
                     
