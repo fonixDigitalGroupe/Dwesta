@@ -3,9 +3,9 @@
         <section class="bg-gray-50 py-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-left">
-                    <!-- Back Button, Title and Subtitle -->
+                    <!-- Back Button and Title -->
                     <div class="flex items-center mb-1">
-                        <a href="/" class="flex items-center justify-center w-10 h-10 bg-[#FF6B35] hover:bg-[#E55A2B] text-white rounded-full transition-all duration-200 mr-4 shadow-sm hover:shadow-md">
+                        <a href="/#services" class="flex items-center justify-center w-10 h-10 bg-[#FF6B35] hover:bg-[#E55A2B] text-white rounded-full transition-all duration-200 mr-4 shadow-sm hover:shadow-md">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
                             </svg>
@@ -24,303 +24,214 @@
         </section>
 
         <!-- Expertise & Pilotage Section 1 -->
-        <section class="py-16 bg-blue-100">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <!-- Left Content -->
+        <section class="py-16 bg-orange-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <div class="space-y-6">
                         <!-- Main Heading -->
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-gray-900">
-                            Sécurité et protection<br><span class="text-[#FF6B35]">de vos données</span>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+                        Sécurisez vos<br><span class="text-[#FF6B35]">Systèmes d'information</span>
                         </h2>
                         
                         <!-- Description -->
-                        <p class="text-lg text-gray-600 leading-relaxed font-light">
-                            Nous protégeons votre entreprise contre les cybermenaces avec des solutions de sécurité avancées, des audits de sécurité et une surveillance continue de vos systèmes.
-                        </p>
+                    <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                        Dwesta vous accompagne dans vos projets de sécurisation avec des solutions d'audit, de conseil et de déploiement de technologies de pointe. Partenaire officiel Fortinet en Centrafrique.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Audit et Conseil -->
+        <section class="py-8 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <!-- Left Column - Content -->
+                    <div class="space-y-8">
+                        <!-- Header Content -->
+                        <div>
+                            <h2 class="text-3xl md:text-4xl font-bold leading-tight text-black mb-4">
+                                Audit et Conseil en <span class="text-[#FF6B35]">Sécurité</span>
+                            </h2>
+                            <p class="text-base text-gray-600 leading-relaxed mb-6">
+                                Notre équipe d'experts vous accompagne dans l'évaluation et l'amélioration de votre posture de sécurité avec des audits complets et des conseils stratégiques.
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-6">Services de conseil</h3>
+                        </div>
                         
-                        <!-- CTA Button -->
-                        <div class="pt-4">
-                            <a href="#contact" class="orange-gradient text-white px-6 py-3 rounded-lg font-semibold text-base hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center">
-                                Planifier un entretien
-                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        <!-- Services List -->
+                        <div class="space-y-6">
+                            <!-- Service 1: Étude et suivi de projets Cyber -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-base font-semibold text-gray-900 mb-1">Étude et suivi de projets Cyber</h4>
+                                    <p class="text-sm text-gray-600">Accompagnement complet de vos initiatives sécurité</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Service 2: Audit de sécurité des SI -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-base font-semibold text-gray-900 mb-1">Audit de sécurité des SI</h4>
+                                    <p class="text-sm text-gray-600">Évaluation complète de votre infrastructure</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Service 3: Schéma directeur Sécurité -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-base font-semibold text-gray-900 mb-1">Schéma directeur Sécurité</h4>
+                                    <p class="text-sm text-gray-600">Stratégie sécurité alignée sur vos objectifs</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Service 4: Formation et sensibilisation -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                                 </svg>
-                            </a>
+                                </div>
+                                <div>
+                                    <h4 class="text-base font-semibold text-gray-900 mb-1">Formation et sensibilisation</h4>
+                                    <p class="text-sm text-gray-600">Éducation aux risques cyber pour vos équipes</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <!-- Right Content - Image -->
+                    <!-- Right Column - Image -->
                     <div class="relative">
-                        <img src="{{ asset('images/cap.png') }}" 
-                             alt="Cybersécurité et protection des données" 
-                             class="w-full h-auto rounded-3xl shadow-2xl">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Cards Section -->
-        <section class="py-16 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- Card 1: Audit et Conseil -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300">
-                        <!-- Card Header -->
-                        <div class="mb-6">
-                            <h2 class="text-2xl md:text-3xl font-bold leading-tight text-gray-900 mb-4">
-                                Audit et Conseil<br><span class="text-[#FF6B35]">en Cybersécurité</span>
-                            </h2>
-                            
-                            <!-- Image -->
-                            <div class="mb-4">
-                                <img src="{{ asset('images/cap.png') }}" 
-                                     alt="Audit cybersécurité" 
-                                     class="w-full h-48 object-cover rounded-xl">
+                        <div class="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
+                            <img src="{{ asset('images/cyberaudit.jpg') }}" 
+                                 alt="Audit cybersécurité" 
+                                 class="w-full h-full object-cover">
+                            <!-- Text Overlay -->
+                            <div class="absolute bottom-8 left-8">
+                                <h3 class="text-white text-2xl font-bold mb-2">Audit complet</h3>
+                                <p class="text-white text-base">Évaluation approfondie de vos systèmes</p>
                             </div>
-                            
-                            <p class="text-base text-gray-600 leading-relaxed">
-                                Évaluation complète de votre posture de sécurité, identification des vulnérabilités et recommandations pour renforcer votre protection.
-                            </p>
-                        </div>
-                        
-                        <!-- Services List -->
-                        <div class="space-y-4">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-3">Nos Services Clés :</h3>
-                            <ul class="space-y-3">
-                                <li class="flex items-start">
-                                    <span class="w-2 h-2 bg-[#FF6B35] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                    <div>
-                                        <strong class="text-gray-900 text-sm">Audit de sécurité</strong><br>
-                                        <span class="text-xs text-gray-600">Analyse complète de vos systèmes et processus.</span>
-                                    </div>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="w-2 h-2 bg-[#FF6B35] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                    <div>
-                                        <strong class="text-gray-900 text-sm">Tests de pénétration</strong><br>
-                                        <span class="text-xs text-gray-600">Simulation d'attaques pour identifier les failles.</span>
-                                    </div>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="w-2 h-2 bg-[#FF6B35] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                    <div>
-                                        <strong class="text-gray-900 text-sm">Conseil stratégique</strong><br>
-                                        <span class="text-xs text-gray-600">Recommandations personnalisées pour votre sécurité.</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Card 2: Protection et Monitoring -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300">
-                        <!-- Card Header -->
-                        <div class="mb-6">
-                            <h2 class="text-2xl md:text-3xl font-bold leading-tight text-gray-900 mb-4">
-                                Protection et Monitoring<br><span class="text-[#FF6B35]">24/7</span>
-                            </h2>
-                            
-                            <!-- Image -->
-                            <div class="mb-4">
-                                <img src="{{ asset('images/cap.png') }}" 
-                                     alt="Monitoring cybersécurité" 
-                                     class="w-full h-48 object-cover rounded-xl">
-                            </div>
-                            
-                            <p class="text-base text-gray-600 leading-relaxed">
-                                Surveillance continue de vos systèmes, détection proactive des menaces et réponse rapide aux incidents de sécurité.
-                            </p>
-                        </div>
-                        
-                        <!-- Services List -->
-                        <div class="space-y-4">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-3">Nos Services Clés :</h3>
-                            <ul class="space-y-3">
-                                <li class="flex items-start">
-                                    <span class="w-2 h-2 bg-[#FF6B35] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                    <div>
-                                        <strong class="text-gray-900 text-sm">SOC (Security Operations Center)</strong><br>
-                                        <span class="text-xs text-gray-600">Surveillance 24/7 de vos systèmes.</span>
-                                    </div>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="w-2 h-2 bg-[#FF6B35] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                    <div>
-                                        <strong class="text-gray-900 text-sm">Détection d'intrusion</strong><br>
-                                        <span class="text-xs text-gray-600">Identification rapide des tentatives d'attaque.</span>
-                                    </div>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="w-2 h-2 bg-[#FF6B35] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                    <div>
-                                        <strong class="text-gray-900 text-sm">Réponse aux incidents</strong><br>
-                                        <span class="text-xs text-gray-600">Gestion rapide et efficace des cyberattaques.</span>
-                                    </div>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="w-2 h-2 bg-[#FF6B35] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                    <div>
-                                        <strong class="text-gray-900 text-sm">Formation sécurité</strong><br>
-                                        <span class="text-xs text-gray-600">Sensibilisation de vos équipes aux bonnes pratiques.</span>
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Gage de Qualité Section -->
-        <section class="py-16 w-full relative overflow-hidden">
-            <div class="max-w-7xl mx-auto relative">
-                <!-- Background Image -->
-                <div class="absolute inset-0 rounded-2xl overflow-hidden">
-                    <img src="{{ asset('images/cap.png') }}" 
-                         alt="Équipe cybersécurité en action" 
-                         class="w-full h-full object-cover filter blur-sm">
+        <!-- Section 3: Logiciels et Equipements de Sécurité -->
+        <section class="py-8 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Header -->
+                <div class="mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold leading-tight text-black mb-4">
+                        Logiciels et Equipements de <span class="text-[#FF6B35]">Sécurité</span>
+                            </h2>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Fournisseur officiel de solutions de cybersécurité avec une expertise particulière sur les technologies Fortinet et ESET. Partenaire exclusif en République Centrafricaine.
+                    </p>
                 </div>
                 
-                <!-- Background with gradient overlay -->
-                <div class="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/90 via-[#0f172a]/60 to-transparent rounded-2xl"></div>
-            
-            <div class="w-full px-8 sm:px-12 lg:px-16 relative z-10 py-12">
-                <div class="max-w-4xl">
-                    <!-- Main Title -->
-                    <h2 class="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">
-                        Expertise cybersécurité certifiée à votre service
-                    </h2>
-                    
-                    <!-- Description -->
-                    <p class="text-lg text-gray-200 leading-relaxed font-light mb-8">
-                        Notre équipe d'experts certifiés en cybersécurité vous garantit une protection de niveau militaire pour vos données et systèmes. Nous mettons notre expertise au service de votre sécurité.
-                    </p>
-                    
-                    <!-- Bullet Points -->
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            <span class="text-white text-base font-medium">Experts certifiés CISSP, CISM, CEH</span>
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            <span class="text-white text-base font-medium">Technologies de sécurité de pointe</span>
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            <span class="text-white text-base font-medium">Conformité RGPD et standards internationaux</span>
-                        </li>
-                    </ul>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <!-- Left Column - Cards -->
+                    <div class="space-y-6">
+                        <!-- Card 1: Logiciels de sécurité -->
+                        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-bold text-gray-900 mb-1">Logiciels de sécurité</h3>
+                                    <p class="text-sm text-gray-600 leading-relaxed">
+                                        Antivirus, EDR, solutions de protection avancées
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2: Pare-feux Fortinet -->
+                        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                    </svg>
+                                    </div>
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-bold text-gray-900 mb-1">Pare-feux Fortinet</h3>
+                                    <p class="text-sm text-gray-600 leading-relaxed">
+                                        Protection périmétrique de nouvelle génération
+                                    </p>
+                    </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 3: Mise en service -->
+                        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-bold text-gray-900 mb-1">Mise en service</h3>
+                                    <p class="text-sm text-gray-600 leading-relaxed">
+                                        Installation et configuration par nos experts
+                                    </p>
+                                </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                    <!-- Right Column - Image with Overlay -->
+                    <div class="relative">
+                        <div class="relative h-[350px] rounded-lg overflow-hidden">
+                            <img src="{{ asset('images/protect.jpg') }}" 
+                                 alt="Technologies avancées" 
+                                 class="w-full h-full object-cover">
+                            <!-- Text Overlay -->
+                            <div class="absolute bottom-6 left-6">
+                                <h3 class="text-white text-xl font-bold mb-1">Technologies avancées</h3>
+                                <p class="text-white text-sm">Solutions de sécurité de dernière génération</p>
+                                    </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
         </section>
+
 
         <!-- Contact CTA -->
         <section id="contact" class="py-8 bg-white">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">
-                    Discutons de votre <span class="text-[#FF6B35]">sécurité informatique</span>
+                    Prêt à sécuriser vos <span class="text-[#FF6B35]">systèmes d'information</span> ?
                 </h2>
                 <p class="text-base text-gray-600 mb-6 font-light">
-                    Notre expertise en cybersécurité est le bouclier de votre entreprise contre les cybermenaces.
+                    Discutons de vos besoins en cybersécurité et élaborons ensemble une stratégie de protection adaptée à votre organisation.
                 </p>
-                <a href="/contact" class="bg-[#FF6B35] text-white px-8 py-3 rounded-lg font-semibold text-base hover:shadow-lg transition-all duration-300 inline-flex items-center">
-                    Demander une consultation
-                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                    </svg>
-                </a>
+                <div class="flex justify-center">
+                    <a href="/contact" class="bg-[#FF6B35] text-white px-7 py-3 rounded-lg font-semibold text-base hover:shadow-lg transition-all duration-300">
+                        Nous contacter
+                    </a>
+                </div>
             </div>
         </section>
-
-        <!-- Footer -->
-        <footer class="bg-[#1b1b18] text-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <!-- Main Footer Content -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
-                    <!-- Company Info -->
-                    <div class="md:col-span-1">
-                        <div class="flex items-center mb-6">
-                            <div class="w-10 h-10 bg-gradient-to-br from-[#FF6B35] to-[#e55a2b] rounded-lg flex items-center justify-center mr-4">
-                                <span class="text-white font-bold text-lg">D</span>
-                            </div>
-                            <div>
-                                <span class="text-2xl font-bold text-white">DWESTA</span>
-                                <span class="text-2xl font-bold text-[#FF6B35] ml-2">Solutions</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-300 text-base leading-relaxed mb-6">
-                            L'énergie de l'Afrique au service d'un avenir connecté,<br>ambitieux et responsable.
-                        </p>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-9 h-9 bg-gray-700 hover:bg-[#FF6B35] rounded-lg flex items-center justify-center transition-all duration-300">
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="w-9 h-9 bg-gray-700 hover:bg-[#FF6B35] rounded-lg flex items-center justify-center transition-all duration-300">
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="w-9 h-9 bg-gray-700 hover:bg-[#FF6B35] rounded-lg flex items-center justify-center transition-all duration-300">
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Quick Links -->
-                    <div class="md:col-span-1">
-                        <h3 class="text-lg font-semibold mb-6 text-white">Liens rapides</h3>
-                        <ul class="space-y-3">
-                            <li><a href="{{ route('home') }}" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Accueil</a></li>
-                            <li><a href="{{ route('about') }}" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">À propos</a></li>
-                            <li><a href="{{ route('services') }}" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Services</a></li>
-                            <li><a href="{{ route('partenariats') }}" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Partenariats</a></li>
-                            <li><a href="{{ route('contact') }}" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Contact Info -->
-                    <div class="md:col-span-1">
-                        <h3 class="text-lg font-semibold mb-6 text-white">Contact</h3>
-                        <ul class="space-y-3">
-                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Bangui, RCA</a></li>
-                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">France</a></li>
-                            <li><a href="mailto:contact@dwesta.com" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">contact@dwesta.com</a></li>
-                            <li><a href="tel:+236XXXXXXXX" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">+236 XX XX XX XX</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Bottom Section -->
-                <div class="border-t border-gray-700 pt-8">
-                    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <div class="text-center md:text-left">
-                            <p class="text-gray-400 text-sm mb-1">
-                                © {{ date('Y') }} DWESTA Solutions. Tous droits réservés.
-                            </p>
-                            <p class="text-gray-500 text-xs">
-                                Entreprise de transformation numérique
-                            </p>
-                        </div>
-                        <div class="flex flex-wrap justify-center gap-6">
-                            <a href="#" class="text-gray-400 hover:text-[#FF6B35] transition-colors duration-300 text-sm">Mentions légales</a>
-                            <a href="#" class="text-gray-400 hover:text-[#FF6B35] transition-colors duration-300 text-sm">Politique de confidentialité</a>
-                            <a href="#" class="text-gray-400 hover:text-[#FF6B35] transition-colors duration-300 text-sm">CGV</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
 </x-main-layout>
