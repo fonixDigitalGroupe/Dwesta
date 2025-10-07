@@ -36,9 +36,9 @@
                 
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="{{ route('home') }}" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Accueil</a>
-                    <a href="#about" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">À propos</a>
-                    <a href="#services" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Services</a>
-                    <a href="#fournisseur" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Partenariats</a>
+                    <a href="{{ route('home') }}#about" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">À propos</a>
+                    <a href="{{ route('home') }}#services" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Services</a>
+                    <a href="{{ route('home') }}#fournisseur" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Partenariats</a>
                     <a href="{{ route('contact') }}" class="bg-[#F53003] text-white px-4 py-2 rounded-lg text-base font-medium hover:bg-[#e02d03] transition-colors">Contact</a>
                 </div>
 
@@ -57,9 +57,9 @@
         <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="{{ route('home') }}" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Accueil</a>
-                <a href="#about" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">À propos</a>
-                <a href="#services" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Services</a>
-                <a href="#fournisseur" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Partenariats</a>
+                <a href="{{ route('home') }}#about" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">À propos</a>
+                <a href="{{ route('home') }}#services" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Services</a>
+                <a href="{{ route('home') }}#fournisseur" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Partenariats</a>
                 <a href="{{ route('contact') }}" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Contact</a>
             </div>
         </div>
@@ -81,7 +81,7 @@
                         <img src="{{ asset('images/logodwesta.png') }}" 
                              alt="Dwesta Solutions" 
                              class="h-12 w-auto mr-4">
-                        <div>
+<div>
                             <span class="text-2xl font-bold text-white">DWESTA</span>
                         </div>
                     </div>
@@ -130,15 +130,15 @@
             <!-- Bottom Section -->
             <div class="border-t border-gray-700 pt-8">
                 <div class="text-center">
-                    <p class="text-gray-400 text-sm mb-1">
+                        <p class="text-gray-400 text-sm mb-1">
                         © 2025 DWESTA SAS. Tous droits réservés.
                     </p>
                     <p class="text-gray-500 text-xs mb-1">
                         NIU: 2362024M15634P | RCCM: CA/BG/2024B2144
-                    </p>
-                    <p class="text-gray-500 text-xs">
-                        Entreprise de transformation numérique
-                    </p>
+                        </p>
+                        <p class="text-gray-500 text-xs">
+                            Entreprise de transformation numérique
+                        </p>
                 </div>
             </div>
 </div>
