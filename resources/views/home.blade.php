@@ -34,14 +34,24 @@
                 </div>
                 
                 <!-- Right Side - Image -->
-                <div class="relative flex justify-center lg:justify-end items-end mt-8 lg:mt-8">
-                    <!-- Main Image Container -->
-                    <div class="relative shadow-2xl hero-rectangle w-[600px] h-[400px] border-[24px] cursor-pointer overflow-hidden" 
-                         style="transform: rotate(-5deg); background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%);"
-                         onclick="this.classList.add('click-animation'); setTimeout(() => { this.classList.remove('click-animation'); }, 200);">
-                        <img src="{{ asset('images/cap.png') }}" 
-                             alt="Dwesta Solutions" 
-                             class="w-full h-full object-cover">
+                <div class="relative flex justify-center lg:justify-end items-center mt-8 lg:mt-8">
+                    <!-- Main Image Container with Decorative Rectangles -->
+                    <div class="relative">
+                        <!-- Main Image Frame -->
+                        <div class="relative shadow-2xl hero-rectangle w-[380px] h-[270px] md:w-[450px] md:h-[300px] lg:w-[600px] lg:h-[400px] border-[12px] md:border-[18px] lg:border-[24px] cursor-pointer overflow-hidden rounded-2xl transition-all duration-500 ease-in-out" 
+                             style="transform: rotate(-5deg); background: white; border-color: white;"
+                             onmouseenter="this.style.transform = 'rotate(0deg) scale(1.05) translateY(-10px)'"
+                             onmouseleave="this.style.transform = 'rotate(-5deg) scale(1) translateY(0)'">
+                            <img src="{{ asset('images/cap.png') }}" 
+                                 alt="Dwesta Solutions" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Rectangle Coin Haut Droit (orange vif) -->
+                        <div class="absolute w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-xl animate-pulse-orange" style="right: -10px; top: -16px; z-index: 10;"></div>
+                        
+                        <!-- Rectangle Coin Bas Gauche (gris-bleu foncé) -->
+                        <div class="absolute w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-xl animate-float-vertical" style="left: -10px; bottom: -20px; background-color: #4A5568; opacity: 0.85; animation-delay: 1s; z-index: 10;"></div>
                     </div>
                 </div>
             </div>
@@ -748,5 +758,75 @@
             };
         });
     </script>
+
+    <!-- CSS pour les animations des rectangles -->
+    <style>
+        @keyframes float-slow {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        @keyframes float-medium {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-15px) rotate(-3deg);
+            }
+        }
+
+        @keyframes float-fast {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-25px) rotate(7deg);
+            }
+        }
+
+        .animate-float-slow {
+            animation: float-slow 4s ease-in-out infinite;
+        }
+
+        .animate-float-medium {
+            animation: float-medium 3s ease-in-out infinite;
+        }
+
+        .animate-float-fast {
+            animation: float-fast 3.5s ease-in-out infinite;
+        }
+
+        @keyframes float-vertical {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .animate-float-vertical {
+            animation: float-vertical 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-orange {
+            0%, 100% {
+                background-color: #FF8A5B;
+                opacity: 0.85;
+            }
+            50% {
+                background-color: #E55A2B;
+                opacity: 1;
+            }
+        }
+
+        .animate-pulse-orange {
+            animation: pulse-orange 2s ease-in-out infinite;
+        }
+    </style>
 
 </x-main-layout>

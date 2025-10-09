@@ -218,7 +218,7 @@
                                 <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
                                     <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-                                    </svg>
+                                </svg>
                                 </div>
                                 <div class="flex-1">
                                     <h3 class="text-base font-bold text-gray-900 mb-1">Applications natives</h3>
@@ -229,8 +229,8 @@
                             </div>
                         </div>
                         </div>
-                            </div>
-                            
+                    </div>
+                    
                     <!-- Right Column - Image with Overlay -->
                     <div class="relative">
                         <div class="relative h-[350px] rounded-lg overflow-hidden">
@@ -386,11 +386,11 @@
                                     <p class="text-sm text-gray-600 leading-relaxed">
                                         Stratégie de contenu et engagement sur toutes les plateformes
                                     </p>
-                                </div>
-                            </div>
                                     </div>
                                     </div>
                                     </div>
+                        </div>
+                    </div>
 
                     <!-- Right Column - Image with Overlay -->
                     <div class="relative">
@@ -418,7 +418,7 @@
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                         Notre processus de <span style="background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">développement</span>
-                    </h2>
+                            </h2>
                     <p class="text-base text-gray-600 leading-relaxed">
                         Une méthodologie éprouvée pour garantir le succès de vos projets numériques
                     </p>
@@ -456,8 +456,8 @@
                         <p class="text-sm text-gray-600 leading-relaxed">
                             Création d'interfaces attrayantes et d'expériences utilisateur optimales.
                         </p>
-                    </div>
-                    
+                            </div>
+                            
                     <!-- Card 3: Développement -->
                     <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 text-center">
                         <div class="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -471,8 +471,8 @@
                         </div>
                         <p class="text-sm text-gray-600 leading-relaxed">
                             Programmation avec les dernières technologies et meilleures pratiques.
-                        </p>
-                    </div>
+                            </p>
+                        </div>
                     
                     <!-- Card 4: Lancement -->
                     <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 text-center">
@@ -658,7 +658,7 @@
 
 </x-main-layout>
                         
-
+                        
                         <!-- Services List -->
 
                         <div class="space-y-4">
@@ -753,11 +753,11 @@
                 </div>
 
                 
-
+                
                 <!-- Background with gradient overlay -->
 
                 <div class="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/90 via-[#0f172a]/60 to-transparent rounded-2xl"></div>
-
+            
             
 
             <div class="w-full px-6 sm:px-8 lg:px-12 relative z-10 py-16">
@@ -772,7 +772,7 @@
                     </h2>
 
                     
-
+                    
                     <!-- Description -->
 
                     <p class="text-lg text-gray-200 leading-relaxed font-light mb-8">
@@ -782,7 +782,7 @@
                     </p>
 
                     
-
+                    
                     <!-- Bullet Points -->
 
                     <ul class="space-y-3">
@@ -865,7 +865,7 @@
 
                 </a>
 
-            </div>
+                    </div>
 
         </section>
 

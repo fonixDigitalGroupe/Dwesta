@@ -283,7 +283,7 @@
                         <p class="text-sm text-gray-600 leading-relaxed">
                             Accompagnement et support technique disponibles pour assurer votre sérénité.
                         </p>
-                    </div>
+                </div>
             </div>
             </div>
         </section>
