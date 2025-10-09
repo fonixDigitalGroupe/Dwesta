@@ -38,7 +38,7 @@
                     <!-- Main Image Container with Decorative Rectangles -->
                     <div class="relative">
                         <!-- Main Image Frame -->
-                        <div class="relative shadow-2xl hero-rectangle w-[380px] h-[270px] md:w-[450px] md:h-[300px] lg:w-[600px] lg:h-[400px] border-[12px] md:border-[18px] lg:border-[24px] cursor-pointer overflow-hidden rounded-2xl transition-all duration-500 ease-in-out" 
+                        <div class="relative shadow-2xl hero-rectangle w-[420px] h-[300px] md:w-[450px] md:h-[300px] lg:w-[600px] lg:h-[400px] border-[12px] md:border-[18px] lg:border-[24px] cursor-pointer overflow-hidden rounded-2xl transition-all duration-500 ease-in-out" 
                              style="transform: rotate(-5deg); background: white; border-color: white;"
                              onmouseenter="this.style.transform = 'rotate(0deg) scale(1.05) translateY(-10px)'"
                              onmouseleave="this.style.transform = 'rotate(-5deg) scale(1) translateY(0)'">
@@ -51,7 +51,7 @@
                         <div class="absolute w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-xl animate-pulse-orange" style="right: -10px; top: -16px; z-index: 10;"></div>
                         
                         <!-- Rectangle Coin Bas Gauche (gris-bleu foncé) -->
-                        <div class="absolute w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-xl animate-float-vertical" style="left: -10px; bottom: -20px; background-color: #4A5568; opacity: 0.85; animation-delay: 1s; z-index: 10;"></div>
+                        <div class="absolute w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-xl animate-float-vertical" style="left: -10px; bottom: -30px; background-color: #2D3748; opacity: 0.85; animation-delay: 1s; z-index: 10;"></div>
                     </div>
                 </div>
             </div>
