@@ -1,24 +1,32 @@
 #!/bin/bash
 
-echo "Starting deployment..."
+echo "Starting Dwesta deployment..."
 
-# Install dependencies
-composer install --no-dev --optimize-autoloader
+# Create storage directories if they don't exist
+mkdir -p storage/framework/{sessions,views,cache}
+mkdir -p storage/logs
+mkdir -p bootstrap/cache
+mkdir -p database
 
-# Generate app key if not exists
-php artisan key:generate --force
+# Set permissions
+chmod -R 775 storage bootstrap/cache
 
-# Clear and cache config
+# Create SQLite database if it doesn't exist
+touch database/database.sqlite
+
+# Clear all caches
+php artisan config:clear
+php artisan cache:clear
+php artisan view:clear
+php artisan route:clear
+
+# Run migrations
+php artisan migrate --force --no-interaction
+
+# Cache config for production
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
-
-# Run migrations
-php artisan migrate --force
-
-# Build assets
-npm install
-npm run build
 
 # Start server
 php artisan serve --host=0.0.0.0 --port=${PORT:-8000}

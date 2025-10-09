@@ -3,13 +3,19 @@ nixPkgs = ["php82", "php82Packages.composer", "nodejs-18_x"]
 
 [phases.install]
 cmds = [
-  "composer install --no-dev --optimize-autoloader",
-  "npm install"
+  "composer install --no-dev --optimize-autoloader --no-interaction",
+  "npm ci --prefer-offline --no-audit"
 ]
 
 [phases.build]
 cmds = [
-  "npm run build"
+  "npm run build",
+  "mkdir -p storage/framework/{sessions,views,cache}",
+  "mkdir -p storage/logs",
+  "mkdir -p bootstrap/cache",
+  "mkdir -p database",
+  "touch database/database.sqlite",
+  "chmod -R 775 storage bootstrap/cache"
 ]
 
 [start]
