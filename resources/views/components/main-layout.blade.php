@@ -39,12 +39,13 @@
                     <a href="{{ route('home') }}#about" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">À propos</a>
                     <a href="{{ route('home') }}#services" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Services</a>
                     <a href="{{ route('home') }}#fournisseur" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Partenariats</a>
-                    <a href="{{ route('contact') }}" class="bg-[#F53003] text-white px-4 py-2 rounded-lg text-base font-medium hover:bg-[#e02d03] transition-colors">Contact</a>
+                    <a href="{{ route('home') }}#contact" class="text-[#2c2c2c] hover:text-[#F53003] px-3 py-2 text-base font-medium transition-colors">Contact</a>
+                    <a href="{{ route('consultation') }}" class="bg-[#F53003] text-white px-4 py-2 rounded-lg text-base font-medium hover:bg-[#e02d03] transition-colors">Prendre rendez-vous</a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-[#2c2c2c] hover:text-[#F53003] focus:outline-none focus:text-[#F53003]">
+                    <button onclick="toggleMenu()" type="button" class="text-[#2c2c2c] hover:text-[#F53003] focus:outline-none focus:text-[#F53003] p-2">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -54,13 +55,14 @@
         </div>
 
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="{{ route('home') }}" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Accueil</a>
-                <a href="{{ route('home') }}#about" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">À propos</a>
-                <a href="{{ route('home') }}#services" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Services</a>
-                <a href="{{ route('home') }}#fournisseur" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Partenariats</a>
-                <a href="{{ route('contact') }}" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003]">Contact</a>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200 shadow-lg absolute top-full left-0 right-0 z-50" style="display: none;">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="{{ route('home') }}" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003] hover:bg-gray-50 rounded-md transition-colors">Accueil</a>
+                <a href="{{ route('home') }}#about" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003] hover:bg-gray-50 rounded-md transition-colors">À propos</a>
+                <a href="{{ route('home') }}#services" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003] hover:bg-gray-50 rounded-md transition-colors">Services</a>
+                <a href="{{ route('home') }}#fournisseur" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003] hover:bg-gray-50 rounded-md transition-colors">Partenariats</a>
+                <a href="{{ route('home') }}#contact" class="block px-3 py-2 text-[#2c2c2c] hover:text-[#F53003] hover:bg-gray-50 rounded-md transition-colors">Contact</a>
+                <a href="{{ route('consultation') }}" class="block px-3 py-2 bg-[#F53003] text-white rounded-lg mx-2 text-center hover:bg-[#e02d00] transition-colors">Prendre rendez-vous</a>
             </div>
         </div>
     </nav>
@@ -86,7 +88,7 @@
                         </div>
                     </div>
                     <p class="text-gray-300 text-base leading-relaxed mb-6">
-                        L'énergie de l'Afrique au service d'un avenir connecté,<br>ambitieux et responsable.
+                        L'énergie de l'Afrique au service d'un avenir connecté, ambitieux et responsable.
                     </p>
                     <div class="flex space-x-4">
                         <!-- Facebook -->
@@ -146,25 +148,45 @@
 
     <!-- JavaScript -->
     <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+        // Simple global function for mobile menu
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu) {
+                if (menu.style.display === 'none' || menu.style.display === '') {
+                    menu.style.display = 'block';
+                    menu.classList.remove('hidden');
+                    console.log('Menu shown!');
+                } else {
+                    menu.style.display = 'none';
+                    menu.classList.add('hidden');
+                    console.log('Menu hidden!');
                 }
+            } else {
+                console.error('Menu not found!');
+            }
+        }
+        
+        // Close menu function
+        function closeMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu) {
+                menu.style.display = 'none';
+                menu.classList.add('hidden');
+            }
+        }
+        
+        // Initialize when page loads
+        window.onload = function() {
+            console.log('Page loaded, mobile menu ready');
+            
+            // Close menu when clicking on links
+            const menuLinks = document.querySelectorAll('#mobile-menu a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    closeMenu();
+                });
             });
-        });
+        };
     </script>
 </body>
 </html>

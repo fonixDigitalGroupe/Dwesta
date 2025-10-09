@@ -44,104 +44,115 @@
                         <!-- Header Content -->
                         <div>
                             <h2 class="text-3xl md:text-4xl font-bold leading-tight text-black mb-4">
-                                Tracking et Gestion de <span class="text-[#FF6B35]">flotte</span>
+                                Suivi et <span style="background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Gestion de flotte</span>
                             </h2>
                             <p class="text-base text-gray-600 leading-relaxed mb-6">
                                 Notre solution de gestion de flotte est adaptée pour tous vos véhicules : motos, voitures, véhicules lourds et maritimes.
                             </p>
-                            <div class="flex items-center space-x-16 mb-6">
-                                <h3 class="text-lg font-semibold text-gray-900">Nos solutions de tracking</h3>
-                                <h3 class="text-lg font-semibold text-gray-900">Logiciel de tracking</h3>
-                            </div>
                         </div>
                         
-                        <!-- Services List -->
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 order-2 lg:order-1">
-                            <!-- Left Column - Solutions de tracking -->
+                        <!-- Services Cards - Two Columns -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Left Column: Nos solutions de tracking -->
                             <div class="space-y-6">
-                                <!-- Service 1: Boîtiers de tracking -->
-                                <div class="flex items-start space-x-4">
-                                    <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-base font-semibold text-gray-900 mb-1">Boîtiers de tracking</h4>
-                                        <p class="text-sm text-gray-600">Adaptés pour toute votre flotte</p>
+                                <h3 class="text-lg font-semibold text-gray-900">Nos solutions de tracking</h3>
+                                
+                                <!-- Card 1: Boîtiers de tracking -->
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100 h-[100px] flex items-center">
+                                    <div class="flex items-start space-x-3 w-full">
+                                        <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="text-base font-bold text-gray-900 mb-1">Boîtiers de tracking</h4>
+                                            <p class="text-sm text-gray-600 leading-relaxed">Adaptés pour toute votre flotte</p>
+                                        </div>
                                     </div>
                                 </div>
                                 
-                                <!-- Service 2: Technologie 4G/2G -->
-                                <div class="flex items-start space-x-4">
-                                    <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-base font-semibold text-gray-900 mb-1">Technologie 4G/2G</h4>
-                                        <p class="text-sm text-gray-600">Remontée temps réel</p>
+                                <!-- Card 2: Technologie 4G/2G -->
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100 h-[100px] flex items-center">
+                                    <div class="flex items-start space-x-3 w-full">
+                                        <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="text-base font-bold text-gray-900 mb-1">Technologie 4G/2G</h4>
+                                            <p class="text-sm text-gray-600 leading-relaxed">Remontée temps réel</p>
+                                        </div>
                                     </div>
                                 </div>
                                 
-                                <!-- Service 3: Technologie satellite -->
-                                <div class="flex items-start space-x-4 pt-6">
-                                    <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
-                                        </svg>
+                                <!-- Card 3: Technologie satellite -->
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100 h-[100px] flex items-center">
+                                    <div class="flex items-start space-x-3 w-full">
+                                        <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="text-base font-bold text-gray-900 mb-1">Technologie satellite</h4>
+                                            <p class="text-sm text-gray-600 leading-relaxed">Pour zones blanches</p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h4 class="text-base font-semibold text-gray-900 mb-1">Technologie satellite</h4>
-                                        <p class="text-sm text-gray-600">Pour zones blanches</p>
-                                    </div>
-                        </div>
-                    </div>
-
-                            <!-- Right Column - Logiciel de tracking -->
-                            <div class="space-y-6">
-                                <!-- Service 1: Position & périmètre -->
-                                <div class="flex items-start space-x-4">
-                                    <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-base font-semibold text-gray-900 mb-1">Position & périmètre</h4>
-                                        <p class="text-sm text-gray-600">Alertes automatiques</p>
-                                    </div>
+                                </div>
                             </div>
                             
-                                <!-- Service 2: Planification et relecture -->
-                                <div class="flex items-start space-x-4 pt-6">
-                                    <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-base font-semibold text-gray-900 mb-1">Planification et relecture</h4>
-                                        <p class="text-sm text-gray-600">Trajets d'optimisation</p>
-                                    </div>
-                        </div>
-                        
-                        
-                                <!-- Service 3: Rapport complet -->
-                                <div class="flex items-start space-x-4">
-                                    <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                                </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-base font-semibold text-gray-900 mb-1">Rapport complet</h4>
-                                        <p class="text-sm text-gray-600">Kilométrage, vitesse, temps</p>
+                            <!-- Right Column: Logiciel de tracking -->
+                            <div class="space-y-6">
+                                <h3 class="text-lg font-semibold text-gray-900">Logiciel de tracking</h3>
+                                
+                                <!-- Card 4: Position et périmètre -->
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100 h-[100px] flex items-center">
+                                    <div class="flex items-start space-x-3 w-full">
+                                        <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="text-base font-bold text-gray-900 mb-1">Position et périmètre</h4>
+                                            <p class="text-sm text-gray-600 leading-relaxed">Alertes automatiques</p>
+                                        </div>
                                     </div>
                                 </div>
+                                
+                                <!-- Card 5: Planification et relecture -->
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100 h-[100px] flex items-center">
+                                    <div class="flex items-start space-x-3 w-full">
+                                        <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="text-base font-bold text-gray-900 mb-1">Planification et relecture</h4>
+                                            <p class="text-sm text-gray-600 leading-relaxed">Trajets d'optimisation</p>
+                                        </div>
                                     </div>
+                                </div>
+                                
+                                <!-- Card 6: Rapport complet -->
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100 h-[100px] flex items-center">
+                                    <div class="flex items-start space-x-3 w-full">
+                                        <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="text-base font-bold text-gray-900 mb-1">Rapport complet</h4>
+                                            <p class="text-sm text-gray-600 leading-relaxed">Kilométrage, vitesse, temps</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
@@ -168,7 +179,7 @@
                 <!-- Header -->
                 <div class="mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold leading-tight text-black mb-4">
-                        SIG Géolocalisation de <span class="text-[#FF6B35]">poteaux</span>
+                        SIG Géolocalisation de <span style="background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">poteaux</span>
                             </h2>
                             <p class="text-base text-gray-600 leading-relaxed">
                                 Notre solution OPGIS (Optimized Power Grid Information System) offre une géolocalisation complète et un référencement détaillé de votre infrastructure électrique, avec reporting avancé pour une gestion optimale.
@@ -183,15 +194,15 @@
                     <!-- Left Column - Documentation -->
                     <div class="space-y-6 order-2 lg:order-1">
                         <!-- Card 1: Cartographie interactive -->
-                        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                            <div class="flex items-start space-x-4">
-                                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
                                     </svg>
                                     </div>
                                 <div class="flex-1">
-                                    <h3 class="text-lg font-bold text-gray-900 mb-1">Cartographie interactive</h3>
+                                    <h4 class="text-base font-bold text-gray-900 mb-1">Cartographie interactive</h4>
                                     <p class="text-sm text-gray-600 leading-relaxed">
                                         Visualisation en temps réel de vos appuis électriques
                                     </p>
@@ -200,15 +211,15 @@
                     </div>
 
                         <!-- Card 2: Base de données centralisée -->
-                        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                            <div class="flex items-start space-x-4">
-                                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
                                     </svg>
                                 </div>
                                 <div class="flex-1">
-                                    <h3 class="text-lg font-bold text-gray-900 mb-1">Base de données centralisée</h3>
+                                    <h4 class="text-base font-bold text-gray-900 mb-1">Base de données centralisée</h4>
                                     <p class="text-sm text-gray-600 leading-relaxed">
                                         PostgreSQL spatial pour une fiabilité maximale
                                     </p>
@@ -217,15 +228,15 @@
                             </div>
                             
                         <!-- Card 3: Reporting et analyses -->
-                        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                            <div class="flex items-start space-x-4">
-                                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                             </svg>
                                 </div>
                                 <div class="flex-1">
-                                    <h3 class="text-lg font-bold text-gray-900 mb-1">Reporting et analyses</h3>
+                                    <h4 class="text-base font-bold text-gray-900 mb-1">Reporting et analyses</h4>
                                     <p class="text-sm text-gray-600 leading-relaxed">
                                         KPIs détaillés et tableaux de bord interactifs
                                     </p>
@@ -247,15 +258,15 @@
                                 Découvrez tous les détails techniques, l'architecture et les fonctionnalités de notre solution OPGIS dans notre présentation complète.
                             </p>
                             <div class="flex space-x-4">
-                                <a href="{{ asset('images/OPGISApp-Prsentation.pdf') }}" target="_blank" class="flex-1 bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-orange-600 transition-colors duration-200 flex items-center justify-center">
-                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <a href="{{ asset('images/OPGISApp-Prsentation.pdf') }}" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold text-sm text-center hover:bg-orange-600 transition-colors duration-200 flex items-center justify-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                             </svg>
                                     Consulter la présentation
                                 </a>
-                                <a href="{{ asset('images/OPGISApp-Prsentation.pdf') }}" download="OPGIS-Presentation.pdf" class="flex-1 bg-white border-2 border-orange-500 text-orange-500 px-6 py-3 rounded-lg font-semibold text-center hover:bg-orange-50 transition-colors duration-200 flex items-center justify-center">
-                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <a href="{{ asset('images/OPGISApp-Prsentation.pdf') }}" download="OPGIS-Presentation.pdf" class="bg-white border-2 border-orange-500 text-orange-500 px-4 py-2 rounded-lg font-semibold text-sm text-center hover:bg-orange-50 transition-colors duration-200 flex items-center justify-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                             </svg>
                                     Télécharger le PDF
@@ -266,7 +277,7 @@
                     
                     <!-- Right Column - Image with Overlay -->
                     <div class="relative order-1 lg:order-2">
-                        <div class="relative h-[350px] rounded-lg overflow-hidden">
+                        <div class="relative h-[280px] rounded-lg overflow-hidden">
                             <img src="{{ asset('images/poteaux.jpg') }}" 
                                  alt="SIG Géolocalisation de poteaux" 
                                  class="w-full h-full object-cover">
@@ -287,7 +298,7 @@
                 <!-- Header -->
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                        SIG Référence <span class="text-[#FF6B35]">infrastructure d'eau</span>
+                        SIG Référence <span style="background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">infrastructure d'eau</span>
                     </h2>
                     <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         Notre solution vous permet de référencer complètement votre réseau d'infrastructure d'eau avec une gestion intelligente et un reporting détaillé.
@@ -347,7 +358,7 @@
                     
                     <!-- Right Column - Image with Overlay -->
                     <div class="relative order-1 lg:order-2">
-                        <div class="relative h-[360px] rounded-lg overflow-hidden">
+                        <div class="relative h-[320px] rounded-lg overflow-hidden">
                             <img src="{{ asset('images/Eau.jpg') }}" 
                                  alt="SIG Référence infrastructure d'eau" 
                                  class="w-full h-full object-cover">
@@ -366,7 +377,7 @@
         <section id="contact" class="py-8 bg-white">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">
-                    Prêt à moderniser vos <span class="text-[#FF6B35]">infrastructures</span> ?
+                    Prêt à moderniser vos <span style="background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">infrastructures</span> ?
                 </h2>
                 <p class="text-base text-gray-600 mb-6 font-light">
                     Discutons de vos besoins spécifiques en IOT/OT et trouvons ensemble la solution adaptée à votre organisation.
@@ -378,4 +389,76 @@
                         </div>
                     </div>
         </section>
+
+    <!-- Custom Scrollbar & Hide Blue Button -->
+    <style>
+        /* Custom Gray Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 6px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        /* Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #888 #f1f1f1;
+        }
+
+        /* Hide any blue circular buttons */
+        button[style*="background"][style*="blue"],
+        button[class*="blue"],
+        a[style*="background"][style*="blue"],
+        div[style*="background"][style*="blue"] {
+            display: none !important;
+        }
+        
+        /* Hide common back-to-top button patterns */
+        [class*="back-to-top"],
+        [id*="back-to-top"],
+        [class*="scroll-top"],
+        [id*="scroll-top"],
+        button[style*="position: fixed"][style*="bottom"],
+        a[style*="position: fixed"][style*="bottom"] {
+            display: none !important;
+        }
+    </style>
+
+    <script>
+        // Additional script to hide any dynamically added blue buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create a MutationObserver to watch for dynamically added elements
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    mutation.addedNodes.forEach(function(node) {
+                        if (node.nodeType === 1) { // Element node
+                            // Check if it's a blue button or circular element
+                            const style = window.getComputedStyle(node);
+                            if (style.backgroundColor.includes('rgb(0, 0, 255)') || 
+                                style.backgroundColor.includes('blue') ||
+                                node.style.backgroundColor.includes('blue')) {
+                                node.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        });
+    </script>
 </x-main-layout>
