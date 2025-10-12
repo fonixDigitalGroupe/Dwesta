@@ -64,9 +64,9 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <!-- Contenu à gauche -->
                 <div>
-                    <!-- Badge "Depuis 2014" -->
+                    <!-- Badge "Depuis 2024" -->
                     <div class="inline-block border border-gray-300 rounded-lg px-6 py-3 mb-6">
-                        <span class="font-bold text-lg" style="background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Depuis 2014</span>
+                        <span class="font-bold text-lg" style="background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Depuis 2024</span>
                     </div>
                     
                     <!-- Titre principal -->
@@ -76,7 +76,7 @@
                     
                     <!-- Description -->
                     <p class="text-xl text-[#666666] leading-relaxed">
-                        Fruit d'une expertise de <strong class="text-[#FF6B35]">+10 ans</strong>, DWESTA est aujourd'hui une société de conseil en transformation numérique, un partenaire de confiance résolument différent par sa culture d'entreprise et son agilité.
+                        Forte d'une expertise de ses associés de <strong class="text-[#FF6B35]">+10 ans chacun</strong>, DWESTA est aujourd'hui une société de conseil en transformation numérique, un partenaire de confiance résolument différent par sa culture d'entreprise et son agilité.
                     </p>
                 </div>
                 
@@ -90,7 +90,7 @@
                             </svg>
                         </div>
                         <div class="text-3xl font-bold text-[#1b1b18] mb-1">2</div>
-                        <div class="text-sm font-medium" style="font-family: 'Times New Roman', serif; background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Continent</div>
+                        <div class="text-sm font-medium" style="font-family: 'Times New Roman', serif; background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Continents</div>
                     </div>
                     
                     <!-- Pays -->
