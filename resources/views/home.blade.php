@@ -81,7 +81,7 @@
                 </div>
                 
                 <!-- Stats à droite -->
-                <div class="grid grid-cols-3 gap-8">
+                <div class="grid grid-cols-3 gap-8 mt-8">
                     <!-- Continents -->
                     <div class="text-center">
                         <div class="w-16 h-16 bg-[#FF6B35] rounded-full mx-auto mb-4 flex items-center justify-center">
