@@ -71,7 +71,7 @@
                     
                     <!-- Titre principal -->
                     <h3 class="text-4xl md:text-5xl font-bold text-[#1b1b18] mb-6 leading-tight mt-8">
-                        <span style="background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">+10 ANS</span> D'EXISTENCE
+                        <span style="background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">2024</span> l'année où tout commence
                     </h3>
                     
                     <!-- Description -->
