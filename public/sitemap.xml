@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.dwesta.com/</loc>
+        <lastmod>2025-01-10</lastmod>
+        <priority>1.0</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.dwesta.com/cybersecurite</loc>
+        <lastmod>2025-01-10</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.dwesta.com/services-informatiques</loc>
+        <lastmod>2025-01-10</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.dwesta.com/developpement-applicatif</loc>
+        <lastmod>2025-01-10</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.dwesta.com/iot-ot</loc>
+        <lastmod>2025-01-10</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.dwesta.com/conseils</loc>
+        <lastmod>2025-01-10</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.dwesta.com/support-maintenance</loc>
+        <lastmod>2025-01-10</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.dwesta.com/partenariats</loc>
+        <lastmod>2025-01-10</lastmod>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+</urlset>
+
+
+
