@@ -112,7 +112,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                             </svg>
                         </div>
-                        <div class="text-3xl font-bold text-[#1b1b18] mb-1">6</div>
+                        <div class="text-3xl font-bold text-[#1b1b18] mb-1">5</div>
                         <div class="text-sm font-medium whitespace-nowrap -ml-1" style="font-family: 'Times New Roman', serif; background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 25%, #D44A1F 50%, #B8390F 75%, #A02D08 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Offres majeures</div>
                     </div>
                 </div>
