@@ -36,6 +36,124 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700" rel="stylesheet" />
+    
+    <!-- SCRIPT ULTRA-PREMIER POUR DETRUIRE LE BOUTON BLEU -->
+    <script>
+        // EXECUTION IMMEDIATE - AVANT TOUS LES AUTRES SCRIPTS
+        (function() {
+            function KILL_BLUE_BUTTON() {
+                // Détruire TOUS les éléments bleus (EXCLURE COOKIE BANNER)
+                const allElements = document.querySelectorAll('*');
+                allElements.forEach(el => {
+                    // EXCLURE LE COOKIE BANNER
+                    if (el.closest('.silktide-cookie-banner') || 
+                        el.closest('.silktide-cookie-preferences') ||
+                        el.classList.contains('silktide-cookie-banner') ||
+                        el.classList.contains('silktide-cookie-preferences') ||
+                        el.id.includes('silktide') ||
+                        el.className.includes('silktide')) {
+                        return; // Ne pas détruire le cookie banner
+                    }
+                    
+                    const style = window.getComputedStyle(el);
+                    if (style.position === 'fixed' && 
+                        (style.backgroundColor.includes('blue') || 
+                         style.backgroundColor.includes('#007bff') ||
+                         style.backgroundColor.includes('#0066cc') ||
+                         style.backgroundColor.includes('rgb(0, 123, 255)') ||
+                         style.backgroundColor.includes('rgb(0, 102, 204)'))) {
+                        el.remove();
+                    }
+                });
+            }
+            
+            // Exécution immédiate
+            KILL_BLUE_BUTTON();
+            
+            // Exécution continue
+            setInterval(KILL_BLUE_BUTTON, 50);
+            setInterval(KILL_BLUE_BUTTON, 25);
+            setInterval(KILL_BLUE_BUTTON, 10);
+        })();
+    </script>
+    
+    <!-- CSS NUCLEAIRE POUR DETRUIRE LE BOUTON BLEU -->
+    <style>
+        /* DESTRUCTION TOTALE DU BOUTON BLEU - GLOBAL */
+        button[style*="background-color: blue"],
+        button[style*="background: blue"],
+        button[style*="background-color: #007bff"],
+        button[style*="background: #007bff"],
+        button[style*="background-color: #0066cc"],
+        button[style*="background: #0066cc"],
+        button[style*="background-color: rgb(0, 123, 255)"],
+        button[style*="background-color: rgb(0, 102, 204)"],
+        button[style*="background-color: #0056b3"],
+        button[style*="background-color: #004085"],
+        /* Boutons circulaires */
+        button[style*="border-radius: 50%"],
+        button[style*="border-radius: 50px"],
+        button[style*="border-radius: 25px"],
+        button[style*="border-radius: 30px"],
+        button[style*="border-radius: 40px"],
+        /* Éléments en position fixe */
+        *[style*="position: fixed"],
+        button[style*="position: fixed"],
+        a[style*="position: fixed"],
+        div[style*="position: fixed"],
+        span[style*="position: fixed"],
+        /* Positionnement bas-droit */
+        *[style*="bottom: 20px"][style*="right: 20px"],
+        *[style*="bottom: 30px"][style*="right: 30px"],
+        *[style*="bottom: 40px"][style*="right: 40px"],
+        *[style*="bottom: 50px"][style*="right: 50px"],
+        /* Éléments bleus */
+        *[style*="background-color: blue"],
+        *[style*="background: blue"],
+        *[style*="background-color: #007bff"],
+        *[style*="background: #007bff"],
+        *[style*="background-color: #0066cc"],
+        *[style*="background: #0066cc"],
+        /* Sélecteurs back-to-top */
+        [id*="back-to-top"],
+        [class*="back-to-top"],
+        [id*="scroll-top"],
+        [class*="scroll-top"],
+        .scroll-to-top,
+        .back-to-top,
+        #scroll-to-top,
+        #back-to-top,
+        /* Sélecteurs de plugins */
+        .wp-back-to-top,
+        .back-to-top-button,
+        .scroll-to-top-button,
+        .top-button,
+        .scroll-up,
+        .go-to-top {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            z-index: -9999 !important;
+            position: absolute !important;
+            left: -9999px !important;
+            top: -9999px !important;
+        }
+        
+        /* MASQUAGE EXTRÊME - TOUS LES BOUTONS EN POSITION FIXE */
+        *[style*="position: fixed"][style*="bottom"],
+        *[style*="position: fixed"][style*="right"],
+        button[style*="position: fixed"][style*="bottom"],
+        a[style*="position: fixed"][style*="bottom"],
+        div[style*="position: fixed"][style*="bottom"],
+        span[style*="position: fixed"][style*="bottom"] {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            z-index: -9999 !important;
+        }
+    </style>
 
     <!-- Preload critical images -->
     @if(request()->is('cybersecurite'))
@@ -77,8 +195,160 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    
+    <!-- Preloader Styles -->
+    <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        
+        #preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #F53003;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    
+    <!-- Cookie Banner -->
+    <link rel="stylesheet" id="silktide-consent-manager-css" href="{{ asset('cookie-banner/silktide-consent-manager.css') }}">
+    <script src="{{ asset('cookie-banner/silktide-consent-manager.js') }}"></script>
+    <script>
+    silktideCookieBannerManager.updateCookieBannerConfig({
+      background: {
+        showBackground: false
+      },
+      cookieIcon: {
+        position: "bottomLeft"
+      },
+      cookieTypes: [
+        {
+          id: "n_cessaire",
+          name: "Nécessaire",
+          description: "<p>Ces cookies sont nécessaires au bon fonctionnement du site internet et ne peuvent pas être désactivés. Ils permettent notamment de gérer la connexion et de mémoriser vos préférences de confidentialité.</p>",
+          required: true,
+          onAccept: function() {
+            console.log('Add logic for the required Nécessaire here');
+          }
+        },
+        {
+          id: "analytics",
+          name: "Analytics",
+          description: "<p>Ces cookies nous aident à améliorer le site en suivant les pages les plus populaires et la façon dont les visiteurs naviguent sur le site.</p>",
+          required: false,
+          onAccept: function() {
+            console.log('Analytics cookies accepted');
+            if (typeof gtag !== 'undefined') {
+              gtag('consent', 'update', {
+                analytics_storage: 'granted',
+              });
+            }
+            if (typeof dataLayer !== 'undefined') {
+              dataLayer.push({
+                'event': 'consent_accepted_analytics',
+              });
+            }
+          },
+          onReject: function() {
+            console.log('Analytics cookies rejected');
+            if (typeof gtag !== 'undefined') {
+              gtag('consent', 'update', {
+                analytics_storage: 'denied',
+              });
+            }
+          }
+        },
+        {
+          id: "publicit",
+          name: "Publicité",
+          description: "<p>Ces cookies offrent des fonctionnalités supplémentaires et une personnalisation destinée à améliorer votre expérience. Ils peuvent être déposés par nous ou par nos partenaires dont nous utilisons les services. </p>",
+          required: false,
+          onAccept: function() {
+            console.log('Publicité cookies accepted');
+            if (typeof gtag !== 'undefined') {
+              gtag('consent', 'update', {
+                ad_storage: 'granted',
+                ad_user_data: 'granted',
+                ad_personalization: 'granted',
+              });
+            }
+            if (typeof dataLayer !== 'undefined') {
+              dataLayer.push({
+                'event': 'consent_accepted_publicit',
+              });
+            }
+          },
+          onReject: function() {
+            console.log('Publicité cookies rejected');
+            if (typeof gtag !== 'undefined') {
+              gtag('consent', 'update', {
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+              });
+            }
+          }
+        }
+      ],
+      text: {
+        banner: {
+          description: "<p>Ce site utilise des cookies pour améliorer votre expérience, mesurer l'audience et personnaliser le contenu.&nbsp;&nbsp;</p><p>Vous pouvez accepter, refuser ou personnaliser vos choix.</p>",
+          acceptAllButtonText: "Accepter",
+          acceptAllButtonAccessibleLabel: "Accepter",
+          rejectNonEssentialButtonText: "Refuser",
+          rejectNonEssentialButtonAccessibleLabel: "Refuser",
+          preferencesButtonText: "Préférences",
+          preferencesButtonAccessibleLabel: "Préférences"
+        },
+        preferences: {
+          title: "Personnalisez vos préférences cookie",
+          description: "<p>Nous respectons votre droit à la vie privée. Vous pouvez choisir de ne pas autoriser certains types de cookies. Vos préférences en matière de cookies s'appliqueront sur l'ensemble de notre site.</p>",
+          creditLinkText: "Obtenez cette bannière gratuitement",
+          creditLinkAccessibleLabel: "Obtenez cette bannière gratuitement"
+        }
+      },
+      position: {
+        banner: "bottomLeft"
+      },
+      onAcceptAll: function() {
+        console.log('All cookies accepted');
+        // Logique pour accepter tous les cookies
+      },
+      onRejectAll: function() {
+        console.log('All non-essential cookies rejected');
+        // Logique pour refuser tous les cookies non-essentiels
+      }
+    });
+    </script>
 </head>
 <body class="font-sans antialiased bg-white">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    
     <!-- Navigation -->
     <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -134,7 +404,7 @@
     <footer class="bg-[#1b1b18] text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <!-- Main Footer Content -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                 <!-- Company Info -->
                 <div class="md:col-span-1">
                     <div class="flex items-center mb-6">
@@ -176,6 +446,17 @@
                     </ul>
                 </div>
 
+                <!-- Legal -->
+                <div class="md:col-span-1">
+                    <h3 class="text-lg font-semibold mb-6 text-white">Informations légales</h3>
+                    <ul class="space-y-3">
+                        <li><a href="{{ route('mentions-legales') }}" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Mentions légales</a></li>
+                        <li><a href="{{ route('cgu') }}" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Conditions générales d'utilisation</a></li>
+                        <li><a href="{{ route('politique-confidentialite') }}" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Politique de confidentialité</a></li>
+                        <li><a href="{{ route('politique-cookies') }}" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Politique de cookies</a></li>
+                    </ul>
+                </div>
+
                 <!-- Contact Info -->
                 <div class="md:col-span-1">
                     <h3 class="text-lg font-semibold mb-6 text-white">Contact</h3>
@@ -190,7 +471,7 @@
             <!-- Bottom Section -->
             <div class="border-t border-gray-700 pt-8">
                 <div class="text-center">
-                        <p class="text-gray-400 text-sm mb-1">
+                        <p class="text-gray-400 text-sm mb-2">
                         © 2025 DWESTA SAS. Tous droits réservés.
                     </p>
                     <p class="text-gray-500 text-xs mb-1">
@@ -206,6 +487,21 @@
 
     <!-- JavaScript -->
     <script>
+        // Preloader - Hide when page is fully loaded
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                // Petit délai pour une meilleure UX
+                setTimeout(() => {
+                    preloader.classList.add('hidden');
+                    // Supprimer complètement du DOM après la transition
+                    setTimeout(() => {
+                        preloader.remove();
+                    }, 500);
+                }, 300);
+            }
+        });
+        
         // Simple global function for mobile menu
         function toggleMenu() {
             const menu = document.getElementById('mobile-menu');
@@ -245,6 +541,249 @@
                 });
             });
         };
+    </script>
+    
+    <!-- SCRIPT NUCLEAIRE GLOBAL POUR DETRUIRE LE BOUTON BLEU -->
+    <script>
+        // EXECUTION IMMEDIATE - DESTRUCTION TOTALE DU BOUTON BLEU
+        (function() {
+            function DESTROY_BLUE_BUTTON() {
+                console.log('🔥 DESTROYING BLUE BUTTON...');
+                
+                // 1. Supprimer par sélecteurs CSS (EXCLURE LE COOKIE BANNER)
+                const selectors = [
+                    'button[style*="background-color: blue"]',
+                    'button[style*="background: blue"]',
+                    'button[style*="background-color: #007bff"]',
+                    'button[style*="background: #007bff"]',
+                    'button[style*="background-color: #0066cc"]',
+                    'button[style*="background: #0066cc"]',
+                    'button[style*="background-color: rgb(0, 123, 255)"]',
+                    'button[style*="background-color: rgb(0, 102, 204)"]',
+                    'button[style*="border-radius: 50%"]',
+                    'button[style*="border-radius: 50px"]',
+                    'button[style*="position: fixed"]',
+                    'a[style*="position: fixed"]',
+                    'div[style*="position: fixed"]',
+                    'span[style*="position: fixed"]',
+                    '*[style*="position: fixed"][style*="bottom"][style*="right"]',
+                    '*[style*="position: fixed"][style*="bottom-right"]',
+                    '[id*="back-to-top"]',
+                    '[class*="back-to-top"]',
+                    '[id*="scroll-top"]',
+                    '[class*="scroll-top"]',
+                    '.scroll-to-top',
+                    '.back-to-top',
+                    '#scroll-to-top',
+                    '#back-to-top',
+                    '.wp-back-to-top',
+                    '.back-to-top-button',
+                    '.scroll-to-top-button',
+                    '.top-button',
+                    '.scroll-up',
+                    '.go-to-top'
+                ];
+                
+                let destroyedCount = 0;
+                selectors.forEach(selector => {
+                    try {
+                        const elements = document.querySelectorAll(selector);
+                        elements.forEach(el => {
+                            // EXCLURE LE COOKIE BANNER
+                            if (el.closest('.silktide-cookie-banner') || 
+                                el.closest('.silktide-cookie-preferences') ||
+                                el.classList.contains('silktide-cookie-banner') ||
+                                el.classList.contains('silktide-cookie-preferences') ||
+                                el.id.includes('silktide') ||
+                                el.className.includes('silktide')) {
+                                return; // Ne pas détruire le cookie banner
+                            }
+                            
+                            el.style.display = 'none !important';
+                            el.style.visibility = 'hidden !important';
+                            el.style.opacity = '0 !important';
+                            el.style.pointerEvents = 'none !important';
+                            el.style.zIndex = '-9999 !important';
+                            el.style.position = 'absolute !important';
+                            el.style.left = '-9999px !important';
+                            el.style.top = '-9999px !important';
+                            el.remove();
+                            destroyedCount++;
+                        });
+                    } catch(e) {}
+                });
+                
+                // 2. Supprimer TOUS les éléments en position fixe dans le coin bas-droit (EXCLURE COOKIE BANNER)
+                const allElements = document.querySelectorAll('*');
+                allElements.forEach(el => {
+                    // EXCLURE LE COOKIE BANNER
+                    if (el.closest('.silktide-cookie-banner') || 
+                        el.closest('.silktide-cookie-preferences') ||
+                        el.classList.contains('silktide-cookie-banner') ||
+                        el.classList.contains('silktide-cookie-preferences') ||
+                        el.id.includes('silktide') ||
+                        el.className.includes('silktide')) {
+                        return; // Ne pas détruire le cookie banner
+                    }
+                    
+                    const style = window.getComputedStyle(el);
+                    const rect = el.getBoundingClientRect();
+                    
+                    // Vérifier si c'est un bouton bleu circulaire en bas à droite
+                    if (style.position === 'fixed' && 
+                        rect.bottom <= 100 && 
+                        rect.right <= 100 &&
+                        (style.backgroundColor.includes('blue') || 
+                         style.backgroundColor.includes('rgb(0, 123, 255)') ||
+                         style.backgroundColor.includes('rgb(0, 102, 204)') ||
+                         style.backgroundColor.includes('#007bff') ||
+                         style.backgroundColor.includes('#0066cc') ||
+                         style.backgroundColor.includes('#0056b3') ||
+                         style.backgroundColor.includes('#004085') ||
+                         el.tagName === 'BUTTON' ||
+                         el.tagName === 'A' ||
+                         el.tagName === 'DIV' ||
+                         el.tagName === 'SPAN')) {
+                        
+                        // DESTRUCTION NUCLEAIRE
+                        el.style.display = 'none !important';
+                        el.style.visibility = 'hidden !important';
+                        el.style.opacity = '0 !important';
+                        el.style.pointerEvents = 'none !important';
+                        el.style.zIndex = '-9999 !important';
+                        el.style.position = 'absolute !important';
+                        el.style.left = '-9999px !important';
+                        el.style.top = '-9999px !important';
+                        el.remove();
+                        destroyedCount++;
+                    }
+                });
+                
+                // 3. Supprimer TOUS les éléments bleus (EXCLURE COOKIE BANNER)
+                const blueElements = document.querySelectorAll('*');
+                blueElements.forEach(el => {
+                    // EXCLURE LE COOKIE BANNER
+                    if (el.closest('.silktide-cookie-banner') || 
+                        el.closest('.silktide-cookie-preferences') ||
+                        el.classList.contains('silktide-cookie-banner') ||
+                        el.classList.contains('silktide-cookie-preferences') ||
+                        el.id.includes('silktide') ||
+                        el.className.includes('silktide')) {
+                        return; // Ne pas détruire le cookie banner
+                    }
+                    
+                    const style = window.getComputedStyle(el);
+                    if (style.backgroundColor.includes('blue') || 
+                        style.backgroundColor.includes('rgb(0, 123, 255)') ||
+                        style.backgroundColor.includes('rgb(0, 102, 204)') ||
+                        style.backgroundColor.includes('#007bff') ||
+                        style.backgroundColor.includes('#0066cc')) {
+                        
+                        el.style.display = 'none !important';
+                        el.style.visibility = 'hidden !important';
+                        el.style.opacity = '0 !important';
+                        el.remove();
+                        destroyedCount++;
+                    }
+                });
+                
+                if (destroyedCount > 0) {
+                    console.log('💥 DESTROYED ' + destroyedCount + ' BLUE BUTTONS!');
+                }
+            }
+            
+            // EXECUTION IMMEDIATE
+            DESTROY_BLUE_BUTTON();
+            
+            // EXECUTION QUAND DOM EST PRET
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', DESTROY_BLUE_BUTTON);
+            } else {
+                DESTROY_BLUE_BUTTON();
+            }
+            
+            // EXECUTION SUR WINDOW LOAD
+            window.addEventListener('load', DESTROY_BLUE_BUTTON);
+            
+            // EXECUTION SUR SCROLL
+            window.addEventListener('scroll', DESTROY_BLUE_BUTTON);
+            
+            // EXECUTION MULTIPLE AVEC DELAIS
+            setTimeout(DESTROY_BLUE_BUTTON, 50);
+            setTimeout(DESTROY_BLUE_BUTTON, 100);
+            setTimeout(DESTROY_BLUE_BUTTON, 200);
+            setTimeout(DESTROY_BLUE_BUTTON, 500);
+            setTimeout(DESTROY_BLUE_BUTTON, 1000);
+            setTimeout(DESTROY_BLUE_BUTTON, 2000);
+            setTimeout(DESTROY_BLUE_BUTTON, 5000);
+            setTimeout(DESTROY_BLUE_BUTTON, 10000);
+            
+            // MUTATION OBSERVER POUR DETECTER LES ELEMENTS AJOUTES DYNAMIQUEMENT
+            if (window.MutationObserver) {
+                const observer = new MutationObserver(function(mutations) {
+                    mutations.forEach(function(mutation) {
+                        if (mutation.type === 'childList') {
+                            DESTROY_BLUE_BUTTON();
+                        }
+                    });
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+            
+            // SURVEILLANCE CONTINUE
+            setInterval(DESTROY_BLUE_BUTTON, 1000);
+            
+            // SURVEILLANCE ULTRA-RAPIDE
+            setInterval(DESTROY_BLUE_BUTTON, 100);
+            
+            // SURVEILLANCE EXTRÊME
+            setInterval(DESTROY_BLUE_BUTTON, 50);
+            
+            // DESTRUCTION IMMEDIATE SUR CHAQUE INTERACTION
+            document.addEventListener('click', DESTROY_BLUE_BUTTON);
+            document.addEventListener('mousemove', DESTROY_BLUE_BUTTON);
+            document.addEventListener('keydown', DESTROY_BLUE_BUTTON);
+            
+            // OVERRIDE DE TOUS LES SCRIPTS EXTERNES
+            const originalCreateElement = document.createElement;
+            document.createElement = function(tagName) {
+                const element = originalCreateElement.call(this, tagName);
+                if (tagName.toLowerCase() === 'button' || tagName.toLowerCase() === 'a' || tagName.toLowerCase() === 'div') {
+                    setTimeout(() => {
+                        const style = window.getComputedStyle(element);
+                        if (style.position === 'fixed' || 
+                            style.backgroundColor.includes('blue') || 
+                            style.backgroundColor.includes('#007bff') ||
+                            style.backgroundColor.includes('#0066cc')) {
+                            element.remove();
+                        }
+                    }, 10);
+                }
+                return element;
+            };
+            
+            // OVERRIDE DE appendChild
+            const originalAppendChild = Node.prototype.appendChild;
+            Node.prototype.appendChild = function(child) {
+                const result = originalAppendChild.call(this, child);
+                if (child.tagName === 'BUTTON' || child.tagName === 'A' || child.tagName === 'DIV') {
+                    setTimeout(() => {
+                        const style = window.getComputedStyle(child);
+                        if (style.position === 'fixed' || 
+                            style.backgroundColor.includes('blue') || 
+                            style.backgroundColor.includes('#007bff') ||
+                            style.backgroundColor.includes('#0066cc')) {
+                            child.remove();
+                        }
+                    }, 10);
+                }
+                return result;
+            };
+        })();
     </script>
 </body>
 </html>

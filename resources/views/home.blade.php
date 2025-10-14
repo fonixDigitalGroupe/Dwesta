@@ -1,4 +1,90 @@
 <x-main-layout>
+    <!-- CSS NUCLEAIRE POUR CACHER LE BOUTON BLEU -->
+    <style>
+        /* DESTRUCTION TOTALE DU BOUTON BLEU */
+        button[style*="background-color: blue"],
+        button[style*="background: blue"],
+        button[style*="background-color: #007bff"],
+        button[style*="background: #007bff"],
+        button[style*="background-color: #0066cc"],
+        button[style*="background: #0066cc"],
+        button[style*="background-color: rgb(0, 123, 255)"],
+        button[style*="background-color: rgb(0, 102, 204)"],
+        button[style*="background-color: #0056b3"],
+        button[style*="background-color: #004085"],
+        /* Boutons circulaires */
+        button[style*="border-radius: 50%"],
+        button[style*="border-radius: 50px"],
+        button[style*="border-radius: 25px"],
+        button[style*="border-radius: 30px"],
+        button[style*="border-radius: 40px"],
+        /* Éléments en position fixe */
+        *[style*="position: fixed"],
+        button[style*="position: fixed"],
+        a[style*="position: fixed"],
+        div[style*="position: fixed"],
+        span[style*="position: fixed"],
+        /* Positionnement bas-droit */
+        *[style*="bottom: 20px"][style*="right: 20px"],
+        *[style*="bottom: 30px"][style*="right: 30px"],
+        *[style*="bottom: 40px"][style*="right: 40px"],
+        *[style*="bottom: 50px"][style*="right: 50px"],
+        /* Éléments bleus */
+        *[style*="background-color: blue"],
+        *[style*="background: blue"],
+        *[style*="background-color: #007bff"],
+        *[style*="background: #007bff"],
+        *[style*="background-color: #0066cc"],
+        *[style*="background: #0066cc"],
+        /* Sélecteurs back-to-top */
+        [id*="back-to-top"],
+        [class*="back-to-top"],
+        [id*="scroll-top"],
+        [class*="scroll-top"],
+        .scroll-to-top,
+        .back-to-top,
+        #scroll-to-top,
+        #back-to-top,
+        /* Sélecteurs de plugins */
+        .wp-back-to-top,
+        .back-to-top-button,
+        .scroll-to-top-button,
+        .top-button,
+        .scroll-up,
+        .go-to-top {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            z-index: -9999 !important;
+            position: absolute !important;
+            left: -9999px !important;
+            top: -9999px !important;
+        }
+    </style>
+    
+    <!-- Script optimisé pour supprimer les boutons bleus -->
+    <script>
+        // Script simplifié et optimisé
+        function hideBlueButtons() {
+            const selectors = [
+                '[id*="back-to-top"]', '[class*="back-to-top"]',
+                'button[style*="background-color: blue"]',
+                'button[style*="background: blue"]'
+            ];
+            
+            selectors.forEach(selector => {
+                document.querySelectorAll(selector).forEach(el => {
+                    el.style.display = 'none';
+                    el.remove();
+                });
+            });
+        }
+        
+        // Exécution unique au chargement
+        document.addEventListener('DOMContentLoaded', hideBlueButtons);
+    </script>
+    
     <!-- Hero Section -->
     <section id="home" class="relative bg-[#F8F6F3] min-h-[70vh] flex items-center overflow-hidden">
         
@@ -39,7 +125,7 @@
                     <div class="relative">
                         <!-- Main Image Frame -->
                         <div class="relative shadow-2xl hero-rectangle w-[420px] h-[300px] md:w-[450px] md:h-[300px] lg:w-[600px] lg:h-[400px] border-[12px] md:border-[18px] lg:border-[24px] cursor-pointer overflow-hidden rounded-2xl transition-all duration-500 ease-in-out" 
-                             style="transform: rotate(-5deg); background: white; border-color: white;"
+                             style="transform: rotatde(-5deg); background: white; border-color: white;"
                              onmouseenter="this.style.transform = 'rotate(0deg) scale(1.05) translateY(-10px)'"
                              onmouseleave="this.style.transform = 'rotate(-5deg) scale(1) translateY(0)'">
                             <img src="{{ asset('images/cap.png') }}" 
@@ -532,67 +618,364 @@
                 </div>
                 
                 <!-- Formulaire -->
-                <div class="bg-white p-8 relative overflow-hidden h-[700px] flex flex-col">
+                <div class="bg-white p-8 relative overflow-hidden min-h-[700px] flex flex-col">
                     
-                    <div class="relative z-10 flex flex-col h-full">
+                    <div class="relative z-10 flex flex-col min-h-full">
                         <div class="mb-8">
                             <h3 class="text-3xl font-bold text-[#1b1b18] mb-3">Envoyez-nous un message</h3>
+                            
+                            <!-- Message de succès -->
+                            @if(session('success'))
+                                <div id="success-message" class="enterprise-success-message">
+                                    <div class="success-alert">
+                                        <div class="success-icon-wrapper">
+                                            <svg class="success-check-icon" viewBox="0 0 24 24" fill="none">
+                                                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <div class="success-message-content">
+                                            <div class="success-title">Message envoyé</div>
+                                            <div class="success-subtitle">Nous vous répondrons dans les plus brefs délais</div>
+                                        </div>
+                                        <button onclick="closeSuccessMessage()" class="success-dismiss-btn" aria-label="Fermer">
+                                            <svg class="dismiss-icon" viewBox="0 0 24 24" fill="none">
+                                                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            @endif
                         </div>
                         
-                        @if(session('success'))
-                            <div class="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-                                {{ session('success') }}
-                            </div>
-                        @endif
 
                         @if(session('error'))
-                            <div class="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
-                                {{ session('error') }}
+                            <div class="error-notification mb-6">
+                                <div class="error-content">
+                                    <div class="error-icon">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="error-text">
+                                        <h4 class="error-title">Erreur lors de l'envoi</h4>
+                                        <p class="error-description">{{ session('error') }}</p>
+                                    </div>
+                                </div>
                             </div>
                         @endif
 
-                        <form action="{{ route('contact.send') }}" method="POST" class="flex flex-col h-full space-y-3">
+
+                        <form id="contact-form" action="{{ route('contact.send') }}" method="POST" class="flex flex-col h-full space-y-4">
                             @csrf
-                        <div>
+                            
+                            <!-- Nom complet -->
+                            <div>
                                 <label class="block text-base font-semibold mb-3 text-[#1b1b18]">Nom complet</label>
-                                <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all duration-300 bg-white text-base" placeholder="Votre nom complet" value="{{ old('name') }}">
+                                <input type="text" name="name" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all duration-300 bg-white text-base" 
+                                       placeholder="Votre nom complet" 
+                                       value="{{ old('name') }}">
                                 @error('name')
-                                    <span class="text-red-500 text-sm">{{ $message }}</span>
-                                @enderror
-                        </div>
-                        <div>
-                                <label class="block text-base font-semibold mb-3 text-[#1b1b18]">Email</label>
-                                <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all duration-300 bg-white text-base" placeholder="votre@email.com" value="{{ old('email') }}">
-                                @error('email')
-                                    <span class="text-red-500 text-sm">{{ $message }}</span>
-                                @enderror
-                        </div>
-                        <div>
-                                <label class="block text-base font-semibold mb-3 text-[#1b1b18]">Objet</label>
-                                <input type="text" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all duration-300 bg-white text-base" placeholder="Objet de votre message" value="{{ old('subject') }}">
-                                @error('subject')
-                                    <span class="text-red-500 text-sm">{{ $message }}</span>
+                                    <span class="text-red-500 text-sm mt-1 block">{{ $message }}</span>
                                 @enderror
                             </div>
+                            
+                            <!-- Email -->
+                            <div>
+                                <label class="block text-base font-semibold mb-3 text-[#1b1b18]">Email</label>
+                                <input type="email" name="email" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all duration-300 bg-white text-base" 
+                                       placeholder="votre@email.com" 
+                                       value="{{ old('email') }}">
+                                @error('email')
+                                    <span class="text-red-500 text-sm mt-1 block">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            
+                            <!-- Objet -->
+                            <div>
+                                <label class="block text-base font-semibold mb-3 text-[#1b1b18]">Objet</label>
+                                <input type="text" name="subject" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all duration-300 bg-white text-base" 
+                                       placeholder="Objet de votre message" 
+                                       value="{{ old('subject') }}">
+                                @error('subject')
+                                    <span class="text-red-500 text-sm mt-1 block">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            
+                            <!-- Message -->
                             <div class="flex-1">
                                 <label class="block text-base font-semibold mb-3 text-[#1b1b18]">Message</label>
-                                <textarea name="message" required class="w-full h-28 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all duration-300 bg-white resize-none text-base" placeholder="Décrivez votre projet en détail...">{{ old('message') }}</textarea>
+                                <textarea name="message" required 
+                                          class="w-full h-32 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all duration-300 bg-white resize-none text-base" 
+                                          placeholder="Décrivez votre projet en détail...">{{ old('message') }}</textarea>
                                 @error('message')
-                                    <span class="text-red-500 text-sm">{{ $message }}</span>
+                                    <span class="text-red-500 text-sm mt-1 block">{{ $message }}</span>
                                 @enderror
-                        </div>
-                            <button type="submit" class="w-full bg-[#FF6B35] text-white py-3 rounded-lg font-semibold text-base hover:bg-[#E55A2B] transition-all duration-300 shadow-lg inline-flex items-center justify-center gap-2">
-                            Envoyer le message
+                            </div>
+                            
+                            <!-- Bouton d'envoi -->
+                            <button type="submit" 
+                                    class="w-full bg-[#FF6B35] text-white py-4 rounded-lg font-semibold text-base hover:bg-[#E55A2B] transition-all duration-300 shadow-lg inline-flex items-center justify-center gap-2 mt-4">
+                                <span>Envoyer le message</span>
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
                                 </svg>
-                        </button>
-                    </form>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        
+        .error-notification {
+            animation: slideInDown 0.5s ease-out;
+        }
+        
+        .error-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px;
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+            border: 1px solid #f87171;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .error-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        }
+        
+        .error-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3);
+        }
+        
+        .error-text {
+            flex: 1;
+        }
+        
+        .error-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #991b1b;
+            margin: 0 0 4px 0;
+            line-height: 1.4;
+        }
+        
+        .error-description {
+            font-size: 14px;
+            color: #b91c1c;
+            margin: 0;
+            line-height: 1.5;
+        }
+        
+        /* Message de succès Enterprise (Google Style) */
+        .enterprise-success-message {
+            animation: slideInFromTop 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            margin: 16px 0;
+        }
+        
+        .success-alert {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 16px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-left: 4px solid #10b981;
+            border-radius: 8px;
+            box-shadow: 
+                0 1px 3px rgba(0, 0, 0, 0.1),
+                0 1px 2px rgba(0, 0, 0, 0.06);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .success-alert::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #10b981, transparent);
+        }
+        
+        .success-icon-wrapper {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+        }
+        
+        .success-check-icon {
+            width: 20px;
+            height: 20px;
+            color: #10b981;
+        }
+        
+        .success-message-content {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .success-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: #111827;
+            line-height: 1.4;
+            margin: 0 0 2px 0;
+        }
+        
+        .success-subtitle {
+            font-size: 13px;
+            color: #6b7280;
+            line-height: 1.4;
+            margin: 0;
+        }
+        
+        .success-dismiss-btn {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            background: none;
+            border: none;
+            color: #9ca3af;
+            cursor: pointer;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.15s ease;
+            margin-top: -2px;
+        }
+        
+        .success-dismiss-btn:hover {
+            background-color: #f3f4f6;
+            color: #6b7280;
+        }
+        
+        .success-dismiss-btn:active {
+            background-color: #e5e7eb;
+            transform: scale(0.95);
+        }
+        
+        .dismiss-icon {
+            width: 16px;
+            height: 16px;
+        }
+        
+        @keyframes slideInFromTop {
+            from {
+                opacity: 0;
+                transform: translateY(-8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Ajustement du formulaire pour accommoder le message */
+        #contact-form {
+            transition: all 0.3s ease; /* Transition fluide */
+        }
+        
+        /* Espacement du bouton d'envoi */
+        #contact-form button[type="submit"] {
+            margin-top: 16px; /* Espacement constant */
+        }
+        
+        
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .success-content,
+            .error-content {
+                padding: 16px;
+                gap: 12px;
+            }
+            
+            .success-icon,
+            .error-icon {
+                width: 32px;
+                height: 32px;
+            }
+            
+            .success-title,
+            .error-title {
+                font-size: 15px;
+            }
+            
+            .success-description,
+            .error-description {
+                font-size: 13px;
+            }
+        }
+    </style>
+
+    <script>
+        function closeSuccessMessage() {
+            const successMessage = document.getElementById('success-message');
+            if (successMessage) {
+                successMessage.style.animation = 'slideOutUp 0.3s ease-in forwards';
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 300);
+            }
+        }
+        
+        // Animation de sortie
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideOutUp {
+                from {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                to {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 
     <!-- Custom Scrollbar Styles -->
     <style>
@@ -656,108 +1039,17 @@
         }
     </style>
 
-    <!-- Image Loading and Blue Button Script -->
+    <!-- Script optimisé pour le chargement d'image -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Optimize contact image loading
+            // Optimisation simple du chargement d'image
             const contactImage = document.querySelector('img[alt="Contact Dwesta Solutions"]');
             if (contactImage) {
-                // Preload the image
-                const img = new Image();
-                img.onload = function() {
-                    contactImage.style.opacity = '1';
-                };
-                img.onerror = function() {
-                    contactImage.style.display = 'none';
-                    contactImage.parentElement.style.background = 'linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%)';
-                };
-                img.src = contactImage.src;
+                contactImage.style.opacity = '1';
             }
-            
-            // Function to hide blue buttons
-            function hideBlueButtons() {
-                const selectors = [
-                    'button[style*="background-color: blue"]',
-                    'button[style*="background: blue"]',
-                    '.bg-blue-500',
-                    '.bg-blue-600', 
-                    '.bg-blue-700',
-                    '[style*="background-color: rgb(59, 130, 246)"]',
-                    '[style*="background-color: #3b82f6"]',
-                    '[style*="background-color: #2563eb"]',
-                    '[style*="background-color: #1d4ed8"]',
-                    'button[class*="rounded-full"][class*="bg-blue"]',
-                    'div[class*="rounded-full"][class*="bg-blue"]'
-                ];
-                
-                selectors.forEach(selector => {
-                    const elements = document.querySelectorAll(selector);
-                    elements.forEach(element => {
-                        const hasArrow = element.querySelector('svg') || element.innerHTML.includes('arrow') || element.innerHTML.includes('chevron');
-                        const isFixed = window.getComputedStyle(element).position === 'fixed' || 
-                                       element.style.position === 'fixed' ||
-                                       element.classList.contains('fixed');
-                        
-                        if (hasArrow || isFixed) {
-                            element.style.display = 'none !important';
-                            element.style.visibility = 'hidden !important';
-                            element.style.opacity = '0 !important';
-                            element.style.pointerEvents = 'none !important';
-                        }
-                    });
-                });
-            }
-            
-            // Run immediately
-            hideBlueButtons();
-            
-            // Run after delays
-            setTimeout(hideBlueButtons, 1000);
-            setTimeout(hideBlueButtons, 3000);
-            
-            // Watch for new elements
-            const observer = new MutationObserver(function(mutations) {
-                mutations.forEach(function(mutation) {
-                    if (mutation.type === 'childList') {
-                        hideBlueButtons();
-                    }
-                });
-            });
-            
-            observer.observe(document.body, {
-                childList: true,
-                subtree: true
-            });
         });
     </script>
 
-    <!-- Script pour optimiser le chargement de l'image de contact -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Précharger l'image de contact
-            const contactImage = new Image();
-            contactImage.src = "{{ asset('images/IMG-contact.jpg') }}";
-            
-            contactImage.onload = function() {
-                // L'image est chargée, on peut l'afficher
-                const imgElement = document.getElementById('contact-image');
-                const placeholder = document.getElementById('image-placeholder');
-                
-                if (imgElement && placeholder) {
-                    imgElement.style.opacity = '1';
-                    placeholder.style.display = 'none';
-                }
-            };
-            
-            contactImage.onerror = function() {
-                // En cas d'erreur, garder le placeholder
-                const placeholder = document.getElementById('image-placeholder');
-                if (placeholder) {
-                    placeholder.style.display = 'flex';
-                }
-            };
-        });
-    </script>
 
     <!-- CSS pour les animations des rectangles -->
     <style>

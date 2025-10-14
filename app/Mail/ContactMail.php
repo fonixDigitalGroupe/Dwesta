@@ -16,7 +16,7 @@ class ContactMail extends Mailable
     public $name;
     public $email;
     public $subject;
-    public $message;
+    public $contactMessage;
 
     /**
      * Create a new message instance.
@@ -26,7 +26,7 @@ class ContactMail extends Mailable
         $this->name = $name;
         $this->email = $email;
         $this->subject = $subject;
-        $this->message = $message;
+        $this->contactMessage = $message;
     }
 
     /**
@@ -35,7 +35,7 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Nouveau message de contact - ' . $this->subject,
+            subject: $this->subject,
             replyTo: $this->email,
         );
     }
@@ -45,10 +45,13 @@ class ContactMail extends Mailable
      */
     public function content(): Content
     {
-        return new Content(
-            view: 'emails.contact',
-        );
+      //  return new Content(
+          //  view: 'emails.contact',
+       // );
+
+       return new Content('emails.contact' );
     }
+
 
     /**
      * Get the attachments for the message.
@@ -59,4 +62,8 @@ class ContactMail extends Mailable
     {
         return [];
     }
+
+
+
+
 }

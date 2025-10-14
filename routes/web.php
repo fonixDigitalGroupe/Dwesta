@@ -67,27 +67,23 @@ Route::get('/support-maintenance', function () {
     return view('services.support-maintenance');
 })->name('support-maintenance');
 
-// Route pour traiter le formulaire de contact
-Route::post('/contact', function (Request $request) {
-    // Validation des données
-    $request->validate([
-        'name' => 'required|string|max:255',
-        'email' => 'required|email|max:255',
-        'subject' => 'required|string|max:255',
-        'message' => 'required|string|max:2000',
-    ]);
+// Routes pour les pages légales
+Route::get('/mentions-legales', function () {
+    return view('legal.mentions-legales');
+})->name('mentions-legales');
 
-    try {
-        // Envoi de l'email
-        Mail::to('contact@dwesta.com')->send(new ContactMail(
-            $request->name,
-            $request->email,
-            $request->subject,
-            $request->message
-        ));
+Route::get('/cgu', function () {
+    return view('legal.cgu');
+})->name('cgu');
 
-        return redirect('/#contact')->with('success', 'Votre message a été envoyé avec succès !');
-    } catch (\Exception $e) {
-        return redirect('/#contact')->with('error', 'Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer.');
-    }
-})->name('contact.send');
+Route::get('/politique-confidentialite', function () {
+    return view('legal.politique-confidentialite');
+})->name('politique-confidentialite');
+
+Route::get('/politique-cookies', function () {
+    return view('legal.politique-cookies');
+})->name('politique-cookies');
+
+// Routes pour le formulaire de contact
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'send'])->name('contact.send');
